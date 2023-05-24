@@ -78,6 +78,10 @@
   --bs-code-color: #e21e80;
   --bs-highlight-bg: #fff3cd;
 }
+consolas-font {
+  font-family: Consolas,"courier new";  
+  font-size: 105%;
+}
 
 *,
 *::before,

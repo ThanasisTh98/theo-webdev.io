@@ -1,0 +1,7 @@
+.con-font {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-size: 1.5rem;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #FC5185;
+}
