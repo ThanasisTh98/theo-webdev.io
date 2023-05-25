@@ -5,6 +5,7 @@ This project is to familirise myself to github, what it can offer me and what I 
 
 This project will house my portfolio!
 
+https://thanasisth98.github.io/theo-webdev.io/
 
 ## Roadmap
 
