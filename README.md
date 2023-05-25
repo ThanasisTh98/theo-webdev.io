@@ -13,4 +13,6 @@ This project will house my portfolio!
 - Decide framework - Going with Bootstrap 5
 
 
-[Imgur](https://i.imgur.com/CWJqYeP.png)
+![Logo](https://i.imgur.com/CWJqYeP.png)
+
+
