@@ -1,10 +1,36 @@
+
+.jockey-one-regular {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
 .con-font {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     
 }
+
 .nav-link:focus, .nav-link:hover {
     color: #FC5185;
 }
 .blue-neon{
     color: #43DDE6 !important ;
+}
+
+/* Nav-bar */
+.nav-bg{
+    background: #B7ADCF66;
+    border-radius: 100px ;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-active{
+    background: #2F235299;
+    border-radius: 100px ;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: #B7ADCF;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
 }
