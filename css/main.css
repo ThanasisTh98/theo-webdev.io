@@ -1,6 +1,7 @@
 :root {
     --tt-primary: #1C1F33;
     --tt-secondary: #525069;
+    --tt-triatry: #B7ADCF
 
 }
 
@@ -31,6 +32,9 @@
 }
 .tt-light-bg{
  background: #F8F9FA;
+}
+.tt-pink-bg{
+    background:var(--tt-triatry);
 }
 .con-font {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
