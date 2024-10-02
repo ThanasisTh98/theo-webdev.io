@@ -23,11 +23,35 @@ body {
     font-style: normal;
     color: var(--tt-primary);
     font-size: 60px;
+    line-height: 120%;
 }
 .tt-title-small {
     font-size: 24px;
     color: var(--tt-secondary);
     font-weight: 200;
+}
+
+.card-bento-reg {
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 1px;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background: linear-gradient(115.27deg, #ADA4C5 5.21%, #73639C 123.25%);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: 2rem;
+}
+
+.card-bento-body {
+    flex: 1 1 auto;
+    padding: 25px;
+    color: #fff;
 }
     
 
