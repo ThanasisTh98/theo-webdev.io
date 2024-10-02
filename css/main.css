@@ -17,6 +17,18 @@ body {
     min-inline-size: 100%;
 }
 
+.tt-title-big {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--tt-primary);
+    font-size: 60px;
+}
+.tt-title-small {
+    font-size: 24px;
+    color: var(--tt-secondary);
+    font-weight: 200;
+}
     
 
 .jockey-one-regular {
