@@ -25,7 +25,7 @@
        font-size: 18px;
     }
     #hero-section span{
-        font-size: 24px;
+        font-size: 20px;
     }
     hr{
     color: #1C1F33;
@@ -37,7 +37,32 @@
     #theo-experience span{
         font-size: 24px;
     }
+    .experience-card{
+      background-color: transparent !important;
+      border: none !important;
+    }
+    #timeDisplay{
+      text-transform: uppercase;
+    }
  </style>
+  <script>
+ function showLondonTime() {
+      var options = { 
+        timeZone: 'Europe/London', 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        second: '2-digit', 
+        hour12: true // 12-hour format
+      };
+      
+      var londonTime = new Date().toLocaleString('en-GB', options);
+      document.getElementById("timeDisplay").textContent = londonTime;
+    }
+
+    setInterval(showLondonTime, 1000); // Update the time every second
+  </script>
+
+
 
     <head>
         <meta charset="utf-8" />
@@ -56,7 +81,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body class="d-flex flex-column">
+    <body class="d-flex flex-column"  onload="showLondonTime()">
         <main class="flex-shrink-0">
             <!-- Navigation-->
 
@@ -77,7 +102,7 @@
                         <a class="nav-link" href="#">About</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Other shit</a>
+                        <a class="nav-link" href="/index.html">Other shit</a>
                       </li>
                     </ul>
                     <span class="navbar-text">
@@ -91,7 +116,8 @@
             <!-- Page content-->
             <section class="py-5" id="hero-section">
                 <div class="container">
-                    <span>Based in London - <strong>04:20 PM</strong></span>
+                    <span>Based North of London - <strong><span id="timeDisplay"></span></strong></span>
+                    
                     <div><hr></div>
                     <h1>Hi, my name is Theo</h1>
                 </div>
@@ -99,13 +125,99 @@
                 <div class="container py-5">
                     <p>Currently <strong> → Web Developer @ Uni of Herts</strong> </p>       
                     <p>Previously <strong> → Senior Technician @ Uni of Herts</strong> </p>       
-                    <p>Delivering <strong> → Good Vibes ☻</strong> </p>                          
+                    <p>Delivering <strong> → Good Vibes ฅ^•ﻌ•^ฅ</strong> </p>                          
                 </div>
             </section>
 
             <section class="py-5" id="theo-experience"> 
                 <div class="container">
                     <span>Experience</span>
+                    <div><hr></div>
+
+                    <!-- Card 1 -->
+                    <div class="card experience-card mb-3" style="">
+                      <div class="row g-0 align-items-center">
+
+                        <div class="col-md-2">
+                          <img src="https://media.licdn.com/dms/image/v2/D4E0BAQF4aEA0Oyatdw/company-logo_200_200/company-logo_200_200/0/1727878350928/uniofherts_logo?e=1736985600&v=beta&t=K9lXorLxCizw9BoU8mX2xfcjJOyKVNWN3c_UBXqkfo4" 
+                          class="img-fluid rounded-circle" 
+                          width="120" height="120" alt="...">
+                        </div>
+
+                        <div class="col-md-9">
+                          <div class="card-body">
+                            <h5 class="card-title"><strong>Web Developer</strong></h5>
+                            <p class="card-text m-0">Uni of Herts</p>
+                            <p class="card-text"><small class="text-body-secondary">Nov 2022 - Present · 2 yrs</small></p>
+                          </div>
+                          
+
+                        </div>
+                        
+                        <div class="col-md-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="#1C1F3399" viewBox="0 0 256 256"><path d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm42.83-94.83a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66-5.66L158.34,132H88a4,4,0,0,1,0-8h70.34L133.17,98.83a4,4,0,0,1,5.66-5.66Z"></path></svg>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                    <div><hr></div>
+                    <!-- Card 2 -->
+                    <div class="card experience-card mb-3" style="">
+                      <div class="row g-0 align-items-center">
+
+                        <div class="col-md-2">
+                          <img src="https://media.licdn.com/dms/image/v2/D4E0BAQF4aEA0Oyatdw/company-logo_200_200/company-logo_200_200/0/1727878350928/uniofherts_logo?e=1736985600&v=beta&t=K9lXorLxCizw9BoU8mX2xfcjJOyKVNWN3c_UBXqkfo4" 
+                          class="img-fluid rounded-circle" 
+                          width="120" height="120" alt="...">
+                        </div>
+
+                        <div class="col-md-9">
+                          <div class="card-body">
+                            <h5 class="card-title"><strong>Web Developer</strong></h5>
+                            <p class="card-text m-0">Uni of Herts</p>
+                            <p class="card-text"><small class="text-body-secondary">Nov 2022 - Present · 2 yrs</small></p>
+                          </div>
+                          
+
+                        </div>
+                        
+                        <div class="col-md-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="#1C1F3399" viewBox="0 0 256 256"><path d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm42.83-94.83a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66-5.66L158.34,132H88a4,4,0,0,1,0-8h70.34L133.17,98.83a4,4,0,0,1,5.66-5.66Z"></path></svg>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div><hr></div>
+                    <!-- Card 3 -->
+                    <div class="card experience-card mb-3" style="">
+                      <div class="row g-0 align-items-center">
+
+                        <div class="col-md-2">
+                          <img src="https://media.licdn.com/dms/image/v2/D4E0BAQF4aEA0Oyatdw/company-logo_200_200/company-logo_200_200/0/1727878350928/uniofherts_logo?e=1736985600&v=beta&t=K9lXorLxCizw9BoU8mX2xfcjJOyKVNWN3c_UBXqkfo4" 
+                          class="img-fluid rounded-circle" 
+                          width="120" height="120" alt="...">
+                        </div>
+
+                        <div class="col-md-9">
+                          <div class="card-body">
+                            <h5 class="card-title"><strong>Web Developer</strong></h5>
+                            <p class="card-text m-0">Uni of Herts</p>
+                            <p class="card-text"><small class="text-body-secondary">Nov 2022 - Present · 2 yrs</small></p>
+                          </div>
+                          
+
+                        </div>
+                        
+                        <div class="col-md-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="#1C1F3399" viewBox="0 0 256 256"><path d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm42.83-94.83a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66-5.66L158.34,132H88a4,4,0,0,1,0-8h70.34L133.17,98.83a4,4,0,0,1,5.66-5.66Z"></path></svg>
+                        </div>
+
+
+                      </div>
+                    </div>
                     <div><hr></div>
                     
                 </div>
@@ -139,5 +251,7 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+
     </body>
 </html>
