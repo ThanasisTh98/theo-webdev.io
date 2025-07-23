@@ -37,47 +37,66 @@ npm run dev
 - **HTML5** - Semantic markup
 - **CSS3** - Custom styling with modern features
 - **Bootstrap 5** - Responsive framework
-- **JavaScript** - Interactive functionality
-- **Google Fonts** - Typography (Jockey One, Josefin Sans)
-- **Bootstrap Icons** - Icon library
+- **JavaScript** - Interactive functionality and GitHub API integration
+- **Google Fonts** - Typography (Plus Jakarta Sans)
+- **Phosphor Icons** - Modern icon library
+- **GitHub API** - Dynamic last commit date display
 
 ## 📁 Project Structure
 
 ```
 theo-webdev.io/
-├── index.html          # Homepage - Skills section
-├── index-v2.html       # Alternative version
-├── projects.html       # Projects showcase
-├── resume.html         # Resume/CV page
+├── index.html          # Homepage - Experience & Projects showcase
+├── about.html          # About page - Personal story & skills
+├── resume.html         # Professional resume with detailed experience
+├── projects.html       # Projects showcase (coming soon)
 ├── assets/             # Images, icons, and media
+│   ├── favicon.ico     # Site favicon
+│   ├── Logo-dark.png   # Brand logo
+│   ├── profile.png     # Profile image
+│   └── ...             # Project images
 ├── css/                # Stylesheets
-│   ├── styles.css      # Main styles
-│   └── main.css        # Additional styles
+│   ├── styles.css      # Bootstrap theme styles
+│   └── main.css        # Additional custom styles
 ├── js/                 # JavaScript files
 │   └── scripts.js      # Main scripts
-└── package.json        # Project dependencies
+├── package.json        # Project dependencies and scripts
+├── .gitignore          # Git ignore rules
+└── README.md           # Project documentation
 ```
 
 ## 🎯 Features
 
-- Responsive design that works on all devices
-- Modern, clean UI with custom animations
-- Interactive navigation
-- Skills showcase
-- Projects gallery
-- Professional resume section
+- **Responsive Design** - Works perfectly on all devices and screen sizes
+- **Modern UI** - Clean, professional design with consistent color scheme
+- **Live London Time** - Real-time clock displaying current London time
+- **Dynamic Updates** - GitHub API integration shows last commit date automatically
+- **Interactive Navigation** - Smooth navigation between About, Resume, and Portfolio
+- **Skills Showcase** - Organized technical and soft skills with icons
+- **Professional Experience** - Detailed work history with achievements
+- **Phosphor Icons** - Beautiful, consistent iconography throughout
+- **Fast Loading** - Optimized assets and efficient code structure
 
 ## 🗺️ Roadmap
 
 - [x] Setup GitHub repository
 - [x] Choose framework (Bootstrap 5)
 - [x] Create basic portfolio structure
-- [x] Setup development environment
-- [ ] Add project showcase with live demos
-- [ ] Implement contact form
+- [x] Setup development environment with live-server
+- [x] Design consistent navigation across all pages
+- [x] Implement About page with personal story
+- [x] Create professional Resume page
+- [x] Add Phosphor icons throughout the site
+- [x] Integrate GitHub API for dynamic commit dates
+- [x] Add live London time display
+- [x] Implement responsive design
+- [ ] Complete projects showcase page
+- [ ] Add project case studies with live demos
+- [ ] Implement contact form functionality
 - [ ] Add dark/light theme toggle
-- [ ] Optimize for SEO
-- [ ] Add animations and transitions
+- [ ] Optimize for SEO and accessibility
+- [ ] Add smooth animations and transitions
+- [ ] Create downloadable PDF resume
 
 ## 📝 License
 
