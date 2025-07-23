@@ -1,0 +1,30 @@
+{
+  "name": "theo-portfolio",
+  "version": "1.0.0",
+  "description": "Thanasis Theo's Personal Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=index.html",
+    "dev": "live-server --port=3000 --open=index.html --watch=css,js,assets",
+    "build": "echo 'Building portfolio...' && echo 'Portfolio built successfully!'",
+    "deploy": "echo 'Ready to deploy to GitHub Pages or your preferred hosting service'"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "frontend",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Thanasis Theo",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThanasisTh98/theo-webdev.io.git"
+  },
+  "homepage": "https://thanasisth98.github.io/theo-webdev.io/"
+}
