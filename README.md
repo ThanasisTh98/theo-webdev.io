@@ -9,7 +9,7 @@ Welcome to my personal portfolio website! This project showcases my skills as a 
 
 ### Prerequisites
 - Node.js (v14 or higher)
-- npm or yarn
+- npm 
 
 ### Installation
 ```bash
@@ -32,17 +32,16 @@ npm run dev
 - `npm run build` - Build the project
 - `npm run deploy` - Deploy preparation
 
-## 🛠️ Tech Stack
+## Stack
 
-- **HTML5** - Semantic markup
-- **CSS3** - Custom styling with modern features
-- **Bootstrap 5** - Responsive framework
-- **JavaScript** - Interactive functionality and GitHub API integration
-- **Google Fonts** - Typography (Plus Jakarta Sans)
-- **Phosphor Icons** - Modern icon library
-- **GitHub API** - Dynamic last commit date display
+- **HTML5** - Standard 
+- **CSS3** - Vanilla Styling
+- **Bootstrap 5** - Responsive framework, easy to work on
+- **JavaScript** - Vanilla JS
+- **Google Fonts** - Typography (Free)
+- **Phosphor Icons** - Free icon library
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 theo-webdev.io/
@@ -65,7 +64,7 @@ theo-webdev.io/
 └── README.md           # Project documentation
 ```
 
-## 🎯 Features
+## Features
 
 - **Responsive Design** - Works perfectly on all devices and screen sizes
 - **Modern UI** - Clean, professional design with consistent color scheme
@@ -108,6 +107,5 @@ This project is open source and available under the [MIT License](LICENSE).
 - GitHub: [@ThanasisTh98](https://github.com/ThanasisTh98)
 - Portfolio: [theo-webdev.io](https://thanasisth98.github.io/theo-webdev.io/)
 
-![Logo](https://i.imgur.com/CWJqYeP.png)
 
 
