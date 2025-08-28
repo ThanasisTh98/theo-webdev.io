@@ -2,6 +2,13 @@
 <html lang="en">
 
 <style>
+    @font-face {
+        font-family: 'Amalgama';
+        src: url('assets/Amalgama.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
     body{
         background-color: #E3DFEC !important;
         color: #525069 !important;
@@ -17,8 +24,10 @@
        flex-direction: column;
     }
     #hero-section h1{
-       font-size: 100px;
-       color: #1C1F33;
+       font-family: 'Amalgama', Arial, sans-serif;
+       font-size: 70px;
+       text-align: center;
+       color: #F4F0F6;
     }
     
     #hero-section p{
@@ -81,21 +90,28 @@
 
             <!-- Page content-->
             <section class="py-5" id="hero-section">
-                <div class="container">
-                    <span>Based North of London - <strong><span id="timeDisplay"></span></strong></span>
-                    
-                    <div><hr></div>
-                    <h1>Hi, my name is Theo</h1>
-                </div>
-
-                <div class="container py-5">
+       
+                
+                <!-- Content -->
+                <div class="container position-relative" style="z-index: 2;">
+                    <div class="row" style="background-image: url('assets/hero.svg'); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 158px; padding: 60px 60px; height: 700px;">
+                        <div class="col-12 align-self-center">
+                            <span>Based North of London - <strong><span id="timeDisplay"></span></strong></span>
+                            
+                            <div><hr></div>
+                            <h1>Hi I am Theo. </br>A web Developer</h1>
+                        <div class="container py-5 px-0 d-flex flex-column justify-content-center align-items-center">
                     <p>Currently <strong> → Web Developer @ Uni of Herts</strong> </p>       
                     <p>Previously <strong> → Senior Technician @ Uni of Herts</strong> </p>       
                     <p>Delivering <strong> → Good Vibes ฅ^•ﻌ•^ฅ</strong> </p>                          
                 </div>
+                          </div>
+                    </div>
+                </div>
+
             </section>
 
-
+</
             <!-- Experience -->
             <section class="py-5" id="theo-experience"> 
                 <div class="container">

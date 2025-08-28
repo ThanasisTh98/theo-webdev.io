@@ -119,6 +119,7 @@ function createCommonStyles() {
       /* Add padding to body to prevent content from hiding behind sticky nav */
       body {
         padding-top: 0;
+        background-color: #F4F0F6 !important;
       }
       
       /* Smooth scrolling for anchor links */
@@ -127,34 +128,7 @@ function createCommonStyles() {
         scroll-padding-top: 100px;
       }
       
-      /* Hero section gradient background */
-      #hero-section {
-        background: linear-gradient(110deg, #E3DFEC 25.76%, #C0BDCD 54.01%, #A29FB1 78.88%, #807D92 106.57%, #726F86 117.87%, #525069 143.3%);
-        position: relative;
-        overflow: hidden;
-      }
-      
-      /* Hero section SVG overlay */
-      #hero-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2007' height='1077' viewBox='0 0 2007 1077' fill='none'%3E%3Cg filter='url(%23filter0_g_433_16815)'%3E%3Crect x='100' y='100' width='1807' height='877' fill='url(%23paint0_linear_433_16815)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_g_433_16815' x='0' y='0' width='2007' height='1077' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015151515603065491 0.015151515603065491' numOctaves='3' seed='4442' result='displacementX'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015151515603065491 0.015151515603065491' numOctaves='3' seed='4443' result='displacementY'/%3E%3CfeColorMatrix in='displacementX' type='matrix' values='0 0 0 1 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 1' result='displacementXRed'/%3E%3CfeColorMatrix in='displacementY' type='matrix' values='0 0 0 0 0  0 0 0 1 0  0 0 0 0 0  0 0 0 0 1'/%3E%3CfeComposite in='displacementXRed' operator='arithmetic' k1='0' k2='1' k3='1' k4='0'/%3E%3CfeDisplacementMap in='shape' scale='200' xChannelSelector='R' yChannelSelector='G' width='100%25' height='100%25'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0'/%3E%3CfeComponentTransfer result='sourceDisplacedAlpha'%3E%3CfeFuncA type='gamma' exponent='0.2'/%3E%3C/feComponentTransfer%3E%3CfeColorMatrix in='shape' type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0'/%3E%3CfeComponentTransfer result='inputSourceAlpha'%3E%3CfeFuncA type='gamma' exponent='0.2'/%3E%3C/feComponentTransfer%3E%3CfeComposite in='sourceDisplacedAlpha' operator='arithmetic' k1='1' k2='0' k3='0' k4='0' result='displacementAlphasMultiplied'/%3E%3CfeComposite in='displacementAlphasMultiplied' operator='arithmetic' k1='0' k2='0' k3='-0.5' k4='0.5' result='centeringAdjustment'/%3E%3CfeComposite in='displacementX' in2='displacementAlphasMultiplied' operator='arithmetic' k1='1' k2='0' k3='0' k4='0'/%3E%3CfeComposite in='centeringAdjustment' operator='arithmetic' k1='0' k2='1' k3='1' k4='0'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 1 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 1' result='displacementXFinal'/%3E%3CfeComposite in='displacementY' in2='displacementAlphasMultiplied' operator='arithmetic' k1='1' k2='0' k3='0' k4='0'/%3E%3CfeComposite in='centeringAdjustment' operator='arithmetic' k1='0' k2='1' k3='1' k4='0'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 1 0  0 0 0 0 0  0 0 0 0 1' result='displacementYFinal'/%3E%3CfeComposite in='displacementXFinal' in2='displacementYFinal' operator='arithmetic' k1='0' k2='1' k3='1' k4='0'/%3E%3CfeComposite in2='displacementAlphasMultiplied' operator='in' result='displacementMap'/%3E%3CfeFlood flood-color='rgb(127, 127, 127)' flood-opacity='1'/%3E%3CfeComposite in2='displacementAlphasMultiplied' operator='out'/%3E%3CfeComposite in2='displacementMap' operator='over' result='displacementMapWithBg'/%3E%3CfeDisplacementMap in='shape' scale='200' xChannelSelector='R' yChannelSelector='G' width='100%25' height='100%25' result='displacedImage'/%3E%3CfeColorMatrix in='shape' type='matrix' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 127 0' result='imageOpaque'/%3E%3CfeDisplacementMap in='imageOpaque' in2='displacementMapWithBg' scale='200' xChannelSelector='R' yChannelSelector='G' width='100%25' height='100%25' result='displacedImageOpaque'/%3E%3CfeColorMatrix in='displacedImage' type='matrix' values='0 0 0 1 0  0 0 0 0 0  0 0 0 0 0  0 0 0 127 0' result='displacedImageRed'/%3E%3CfeColorMatrix in='shape' type='matrix' values='0 0 0 1 0  0 0 0 0 0  0 0 0 0 0  0 0 0 127 0'/%3E%3CfeComposite in='displacedImageRed' operator='atop' result='transparencyRedMap'/%3E%3CfeColorMatrix in='transparencyRedMap' type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1 0 0 0 0' result='transparencyAlphaMap'/%3E%3CfeComposite in='displacedImageOpaque' in2='imageOpaque' operator='over'/%3E%3CfeComposite in2='transparencyAlphaMap' operator='in' result='effect1_texture_433_16815'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_433_16815' x1='519.5' y1='386' x2='2358' y2='1790.5' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23E3DFEC'/%3E%3Cstop offset='0.240385' stop-color='%23C0BDCD'/%3E%3Cstop offset='0.451923' stop-color='%23A29FB1'/%3E%3Cstop offset='0.6875' stop-color='%23807D92'/%3E%3Cstop offset='0.783654' stop-color='%23726F86'/%3E%3Cstop offset='1' stop-color='%23525069'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        opacity: 0.3;
-        z-index: 1;
-      }
-      
-      /* Ensure hero section content is above the SVG overlay */
-      #hero-section > * {
-        position: relative;
-        z-index: 2;
-      }
+ 
     </style>
   `;
 }
