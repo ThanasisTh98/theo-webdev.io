@@ -1,62 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<style>
-    @font-face {
-        font-family: 'Amalgama';
-        src: url('assets/Amalgama.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    body{
-        background-color: #E3DFEC !important;
-        color: #525069 !important;
-    }
-    #hero-section{
-       min-height: 100vh;
-       border-top: 3px solid #1c1f3348;
-       border-bottom: 3px solid #1c1f3348;
-       
 
-       justify-content: center;
-       display: flex;
-       flex-direction: column;
-    }
-    #hero-section h1{
-       font-family: 'Amalgama', Arial, sans-serif;
-       font-size: 70px;
-       text-align: center;
-       color: #F4F0F6;
-    }
-    
-    #hero-section p{
-       font-size: 18px;
-    }
-    #hero-section span{
-        font-size: 20px;
-    }
-    hr{
-    color: #1C1F33;
-    border: 0;
-    border-top: 2px solid;
-    opacity: 0.6;  
-    }
-
-    #theo-experience span{
-        font-size: 24px;
-    }
-    .experience-card{
-      background-color: transparent !important;
-      border: none !important;
-    }
-    #timeDisplay{
-      text-transform: uppercase;
-    }
-    .bg-footer{
-      border-top: 3px solid #1c1f3348;
-    }
- </style>
 
 
 
@@ -82,267 +27,396 @@
         <script src="js/navigation.js"></script>
         <script src="js/common.js"></script>
     </head>
+    <style>
+    body{
+    
+        background: radial-gradient(50% 50% at 50% 50%, #9C72EF 0%, #F4F1FA 100%)!important;
+        color: #525069 !important;
+    }
+    .bg-container{
+        background: rgba(234, 230, 245, 0.60);
+        backdrop-filter: blur(2.950000047683716px);
+
+    }
+    #index-hero{
+       min-height: 60vh;
+       /* border-top: 3px solid #1c1f3348;
+       border-bottom: 3px solid #1c1f3348; */
+       justify-content: center;
+       display: flex;
+       flex-direction: column;
+    }
+    #index-hero h1{
+       font-size: 80px;
+       color: #1C1F33;
+    }
+    
+    #index-hero p{
+       font-size: 18px;
+    }
+    #index-hero span{
+        font-size: 20px;
+    }
+.py-hero{
+    padding-top: 210px;
+    padding-bottom: 100px;
+}
+#heading-hr{
+    display: flex;
+    flex-direction: row;
+    width: calc(40%);
+    margin: 1rem 0;
+    color: #9D4EDD;
+    border: 0;
+    border-top: 2px solid;
+    opacity: 1;
+}
+    .section-title{
+        padding-bottom: 41px;
+        align-items: center;
+    }
+    .section-title h2{
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .section-title strong{
+        color: #9D4EDD;
+    }
+    #about-content span{
+        font-size: 24px;
+    }
+    .about-card{
+      background-color: transparent !important;
+      border: none !important;
+    }
+    #timeDisplay{
+      text-transform: uppercase;
+    }
+    .bg-footer{
+      border-top: 3px solid #1c1f3348;
+    }
+    .skill-tag {
+        background-color: #1C1F33;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        margin: 4px;
+        display: inline-block;
+        font-size: 14px;
+    }
+    .skill-tag i {
+        margin-right: 6px;
+    }
+    .hr-container {
+  width: 40%;
+}
+
+.custom-hr {
+  width: 100%;
+  border-top: 2px solid #9D4EDD;
+  color: #9D4EDD;
+  opacity: 1;
+}
+.border-tt-card {
+    --bs-border-opacity: 1;
+    /* border: 1px solid #3C3A47 !important; */
+}
+.text-bg-tt-card {
+    color: #3C3A47 !important;
+    background: rgba(220, 211, 244, 0.30)!important;
+    backdrop-filter: blur(12px)!important;
+}
+ </style>
+ 
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <div id="navigation-placeholder"></div>
 
-
-            <!-- Page content-->
-            <section class="py-5" id="hero-section">
-       
-                
-                <!-- Content -->
-                <div class="container position-relative" style="z-index: 2;">
-                    <div class="row" style="background-image: url('assets/hero.svg'); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 158px; padding: 60px 60px; height: 700px;">
-                        <div class="col-12 align-self-center">
-                            <span>Based North of London - <strong><span id="timeDisplay"></span></strong></span>
-                            
-                            <div><hr></div>
-                            <h1>Hi I am Theo. </br>A web Developer</h1>
-                        <div class="container py-5 px-0 d-flex flex-column justify-content-center align-items-center">
-                    <p>Currently <strong> → Web Developer @ Uni of Herts</strong> </p>       
-                    <p>Previously <strong> → Senior Technician @ Uni of Herts</strong> </p>       
-                    <p>Delivering <strong> → Good Vibes ฅ^•ﻌ•^ฅ</strong> </p>                          
+<div class="container bg-container p-5">
+            <!--  Hero Section -->
+            <section class="py-hero" id="index-hero">
+                <span>
+                    Based North of London - <strong><span id="timeDisplay"></span></strong>
+                </span>
+                <h1>
+                    Hi, my name is <strong>Theo</strong>
+                </h1>
+                <div class="container py-5 px-0 d-flex flex-column justify-content-start align-items-start">
+                    <p>Currently → <strong>Lead Web Developer</strong> @ Uni of Herts</p>
+                    <p>Previously → Web Developer @ Uni of Herts</p>
+                    <p>Delivering  → Good Vibes ฅ^•ﻌ•^ฅ </p>
                 </div>
-                          </div>
-                    </div>
-                </div>
-
             </section>
 
-</
-            <!-- Experience -->
-            <section class="py-5" id="theo-experience"> 
+            <!-- skills Content -->
+            <section class="py-5" id="about-content">
+                <!-- Section title row -->
+                <div class="section-title d-flex flex-row">
+                    <div class="p-2">
+                        <h2><strong>#</strong>skills</h2>
+                    </div>
+                    <div class="hr-container">
+                        <hr class="custom-hr">
+                    </div>
+                </div>
+                <!-- Skills cards row -->
+                <div class="row justify-content-center">
+                    <!-- Languages Card -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-3 mb-sm-0">
+                        <div class="card border-tt-card text-bg-tt-card">
+                            <div class="card-header">Languages</div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Python</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tools Card -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                        <div class="card border-tt-card text-bg-tt-card">
+                            <div class="card-header">Tools</div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <ul>
+                                    <li>VS Code</li>
+                                    <li>Git</li>
+                                    <li>Webpack</li>
+                                    <li>Babel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Other Card -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-tt-card text-bg-tt-card">
+                            <div class="card-header">Other</div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Adobe XD</li>
+                                    <li>Sketch</li>
+                                    <li>InVision</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Version Control Card -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                        <div class="card border-tt-card text-bg-tt-card">
+                            <div class="card-header">Version control</div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <ul>
+                                    <li>Git</li>
+                                    <li>GitHub</li>
+                                    <li>GitLab</li>
+                                    <li>Bitbucket</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Frameworks Card -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                        <div class="card border-tt-card text-bg-tt-card">
+                            <div class="card-header">Frameworks</div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <ul>
+                                    <li>React</li>
+                                    <li>Angular</li>
+                                    <li>Vue.js</li>
+                                    <li>Django</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- About Content -->
+            <section class="py-5" id="about-content"> 
                 <div class="container">
-                    <span>Experience</span>
-                    <div><hr></div>
-
-                    <!-- Card 1 -->
-                    <div class="card experience-card mb-3">
-                      <div class="row g-0 align-items-center">
-
-                        <div class="col-md-2">
-                          <img src="assets/uniofherts-logo.png" 
-                          class="img-fluid rounded-circle" 
-                          width="120" height="120" alt="University of Hertfordshire Logo">
-                        </div>
-
-                        <div class="col-md-9">
-                          <div class="card-body">
-                            <h5 class="card-title"><strong>Web Developer</strong></h5>
-                            <p class="card-text m-0">Uni of Herts</p>
-                            <p class="card-text"><small class="text-body-secondary">Nov 2022 - Present · 2 yrs</small></p>
-                          </div>
-                          
-
-                        </div>
-                        
-                        <div class="col-md-1">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="#1C1F3399" viewBox="0 0 256 256"><path d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm42.83-94.83a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66-5.66L158.34,132H88a4,4,0,0,1,0-8h70.34L133.17,98.83a4,4,0,0,1,5.66-5.66Z"></path></svg>
-                        </div>
-
-
-                      </div>
-                    </div>
-
-                    <div><hr></div>
-                    <!-- Card 2 -->
-                    <div class="card experience-card mb-3">
-                      <div class="row g-0 align-items-center">
-
-                        <div class="col-md-2">
-                          <img src="assets/uniofherts-logo.png" 
-                          class="img-fluid rounded-circle" 
-                          width="120" height="120" alt="University of Hertfordshire Logo">
-                        </div>
-
-                        <div class="col-md-9">
-                          <div class="card-body">
-                            <h5 class="card-title"><strong>Senior Technical Officer (Electronics Network Systems and Hardware)</strong></h5>
-                            <p class="card-text m-0">Uni of Herts</p>
-                            <p class="card-text"><small class="text-body-secondary">Sep 2020 - Nov 2022 · 2 yrs 3 mos</small></p>
-                          </div>
-                          
-
-                        </div>
-                        
-                        <div class="col-md-1">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="#1C1F3399" viewBox="0 0 256 256"><path d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm42.83-94.83a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66-5.66L158.34,132H88a4,4,0,0,1,0-8h70.34L133.17,98.83a4,4,0,0,1,5.66-5.66Z"></path></svg>
-                        </div>
-
-
-                      </div>
-                    </div>
-                    <div><hr></div>
-                    <!-- Card 3 -->
-                    <div class="card experience-card mb-3">
-                      <div class="row g-0 align-items-center">
-
-                        <div class="col-md-2">
-                          <img src="https://media.licdn.com/dms/image/v2/D4E0BAQHieoru9vkPbQ/company-logo_100_100/company-logo_100_100/0/1688646228188?e=1737590400&v=beta&t=8n-D0RGlbZoPQxFyNCCqPJe9T5iGcFUOWjD_NfpHfTw" 
-                          class="img-fluid rounded-circle" 
-                          width="120" height="120" alt="...">
-                        </div>
-
-                        <div class="col-md-9">
-                          <div class="card-body">
-                            <h5 class="card-title"><strong>Front Of House</strong></h5>
-                            <p class="card-text m-0">McMullen & Sons Ltd · Part-time</p>
-                            <p class="card-text"><small class="text-body-secondary">Apr 2019 - Mar 2020 · 1 yr</small></p>
-                          </div>
-                          
-
-                        </div>
-                        
-                        <div class="col-md-1">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="#1C1F3399" viewBox="0 0 256 256"><path d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm42.83-94.83a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66-5.66L158.34,132H88a4,4,0,0,1,0-8h70.34L133.17,98.83a4,4,0,0,1,5.66-5.66Z"></path></svg>
-                        </div>
-
-
-                      </div>
-                    </div>
-                    <div><hr></div>
-                    
+       
+            <div class="section-title d-flex flex-row">
+                <div class="p-2"><h2><strong>#</strong>about</h2></div>
+                <div class="hr-container">
+                    <hr class="custom-hr">
                 </div>
-
+            </div>
+                    
+                    
+                    
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6">
+                            <p class="mb-4">
+                                I'm Thanasis (Theo) Theodorou, a web developer based north of London with a unique journey from electronics and technical systems to web development. My transition from being a Senior Technical Officer to a Web Developer at the University of Hertfordshire has given me a distinctive perspective on problem-solving and technical implementation.
+                            </p>
+                            
+                            <p class="mb-4">
+                                My background in electronics, network systems, and hardware provides me with a deep understanding of how systems work at a fundamental level. This technical foundation, combined with my passion for creating engaging digital experiences, allows me to approach web development with both creativity and technical precision.
+                            </p>
+                            
+                            <p class="mb-4">
+                                When I'm not coding, you'll find me exploring new technologies, working on side projects, or delivering good vibes wherever I go. I believe in creating web experiences that are not just functional, but genuinely enjoyable to use.
+                            </p>
+                            <button type="button" class="btn btn-lg btn-outline-primary">Primary</button>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="card about-card">
+                                <div class="card-body text-center">
+                                    <img src="assets/profile.png" class="img-fluid rounded-pill mb-3" alt="Thanasis Theo" style="width: 279px; height: 382px; object-fit: cover;">
+                                    <h5>Quick Facts</h5>
+                                    <p class="small mb-1"><strong>Location:</strong> North of London, UK</p>
+                                    <p class="small mb-1"><strong>Current Role:</strong> Web Developer</p>
+                                    <p class="small mb-1"><strong>Experience:</strong> 2+ years in web dev</p>
+                                    <p class="small mb-1"><strong>Specialty:</strong> Frontend Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-
-            <!-- Side Projects -->
-            <section class="py-5" id="theo-experience"> 
-              <div class="container">
-                  <span>Side Projects</span>
-                  <div><hr></div>
-
-                  <!-- Card 1 -->
-                  <div class="card experience-card mb-3">
-                    <div class="row g-0 align-items-center">
-
-                      <div class="col-md-2">
-                        <img src="./assets/cafe-royal-porject.png" 
-                        class="img-fluid" 
-                        width="170" height="160" alt="...">
-                      </div>
-
-                      <div class="col-md-9">
+            <!-- Projects Content -->
+            <section class="py-5" id="projects-content"> 
+                <div class="container">
+       
+            <div class="section-title d-flex flex-row">
+                <div class="p-2"><h2><strong>#</strong>projects</h2></div>
+                    <div class="hr-container">
+                    <hr class="custom-hr">
+                    </div>
+            </div>
+                    
+            <!-- Skills Cards Row -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card">
+                        <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title"><strong>Cafe Royal → Rebrand</strong></h5>
-                          <p class="card-text m-0">Classic. British. Caf. </p>
-                          
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card">
+                        <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card">
+                        <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 4</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+
+                </div>
+            </section>
+
+           
+
+            <!-- Contact Content -->
+            <section class="py-5" id="contact-content"> 
+                <div class="container">
+       
+            <div class="section-title d-flex flex-row">
+                <div class="p-2"><h2><strong>#</strong>contact</h2></div>
+                <div class="hr-container">
+                    <hr class="custom-hr">
+                </div>
+            </div>
+                    
+                    
+                    
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6">
+                            <p class="mb-4">
+                               Have an opportunity or role that might be a good fit? I’d be happy to hear from you—please get in touch!
+                            </p>
+                            
+                            
+                            
+                            
+                            <button type="button" class="btn btn-lg btn-outline-primary">Primary</button>
                         </div>
                         
-
-                      </div>
-                      
-                      <div class="col-md-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="#1C1F3399" viewBox="0 0 256 256"><path d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm42.83-94.83a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66-5.66L158.34,132H88a4,4,0,0,1,0-8h70.34L133.17,98.83a4,4,0,0,1,5.66-5.66Z"></path></svg>
-                      </div>
-
-
-                    </div>
-                  </div>
-
-                  <div><hr></div>
-                  <!-- Card 2 -->
-                  <div class="card experience-card mb-3">
-                    <div class="row g-0 align-items-center">
-
-                      <div class="col-md-2">
-                        <img src="assets/tattoo-porject.png" 
-                        class="img-fluid" 
-                        width="170" height="160" alt="...">
-                      </div>
-
-                      <div class="col-md-9">
-                        <div class="card-body">
-                          <h5 class="card-title"><strong>Tattoo Studio → Template</strong></h5>
-                          <p class="card-text m-0">Making your mark</p>
+                        <div class="col-lg-3">
+                            <div class="card" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Message me here:</h5>
+                                    <ul>
+                                        <li>Email: example@example.com</li>
+                                        <li>Phone: (123) 456-7890</li>
+                                        <li>LinkedIn: linkedin.com/in/yourprofile</li>
+                                        <li>GitHub: github.com/yourusername</li>
+                                    </ul>
+                                </div>
+                                </div>
                         </div>
-                        
-
-                      </div>
-                      
-                      <div class="col-md-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="#1C1F3399" viewBox="0 0 256 256"><path d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm42.83-94.83a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66-5.66L158.34,132H88a4,4,0,0,1,0-8h70.34L133.17,98.83a4,4,0,0,1,5.66-5.66Z"></path></svg>
-                      </div>
-
-
                     </div>
-                  </div>
-                  <div><hr></div>
-                 
-              </div>
+                </div>
+            </section>
+          
 
-          </section>
 
-          <!-- Contact Section -->
-          <section class="py-5" id="contact"> 
-              <div class="container">
-                  <span>Get In Touch</span>
-                  <div><hr></div>
-                  
-                  <div class="row">
-                      <div class="col-lg-8">
-                          <p class="mb-4">
-                              I'm always interested in new opportunities and collaborations. Whether you have a project in mind, want to discuss web development, or just want to say hello, feel free to reach out!
-                          </p>
-                          
-                          <div class="row">
-                              <div class="col-md-6 mb-3">
-                                  <h6><i class="ph ph-envelope" style="color: #1C1F33;"></i> Email</h6>
-                                  <p><a href="mailto:theo@example.com" class="link-dark">theo@example.com</a></p>
-                              </div>
-                              
-                              <div class="col-md-6 mb-3">
-                                  <h6><i class="ph ph-linkedin-logo" style="color: #1C1F33;"></i> LinkedIn</h6>
-                                  <p><a href="https://linkedin.com/in/thanasis-theo" target="_blank" class="link-dark">@thanasis-theo</a></p>
-                              </div>
-                              
-                              <div class="col-md-6 mb-3">
-                                  <h6><i class="ph ph-github-logo" style="color: #1C1F33;"></i> GitHub</h6>
-                                  <p><a href="https://github.com/ThanasisTh98" target="_blank" class="link-dark">@ThanasisTh98</a></p>
-                              </div>
-                              
-                              <div class="col-md-6 mb-3">
-                                  <h6><i class="ph ph-map-pin" style="color: #1C1F33;"></i> Location</h6>
-                                  <p>North of London, UK</p>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <div class="col-lg-4">
-                          <div class="text-center">
-                              <i class="ph ph-chat-circle-dots" style="font-size: 80px; color: #1C1F33; opacity: 0.6;"></i>
-                              <h5 class="mt-3">Let's Chat!</h5>
-                              <p>I typically respond within 24 hours</p>
-                          </div>
-                      </div>
-                  </div>
-                  
-                  <div><hr></div>
-              </div>
-          </section>
 
+</div>
 
         </main>
-        <!-- Footer-->
+       <!-- Footer-->
         <div id="footer-placeholder"></div>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         
         <!-- Initialize Navigation and Footer -->
         <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Load navigation
-            document.getElementById('navigation-placeholder').innerHTML = createNavigation('index');
+            document.getElementById('navigation-placeholder').innerHTML = createNavigation('about');
             
             // Load footer
             document.getElementById('footer-placeholder').innerHTML = createFooter();

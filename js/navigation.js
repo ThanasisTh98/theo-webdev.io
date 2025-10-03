@@ -79,7 +79,7 @@ function createCommonStyles() {
       /* Sticky navigation enhancements */
       .navbar-custom {
         border-radius: 200px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
+        border: 1px solid #9D4EDD;
         background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.10) 100%);
         box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.25) inset;
         backdrop-filter: blur(6px);
@@ -88,7 +88,7 @@ function createCommonStyles() {
         z-index: 1030;
         margin: 20px auto;
         width: calc(100% - 20px);
-        max-width: 50%;
+        
         left: 50%;
         transform: translateX(-50%);
       }

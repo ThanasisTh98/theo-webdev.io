@@ -26,5 +26,8 @@
     "type": "git",
     "url": "https://github.com/ThanasisTh98/theo-webdev.io.git"
   },
-  "homepage": "https://thanasisth98.github.io/theo-webdev.io/"
+  "homepage": "https://thanasisth98.github.io/theo-webdev.io/",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
 }
