@@ -77,7 +77,9 @@
     }
     .section-title h2{
         font-size: 32px;
-        font-weight: 400;
+        font-weight: 500;
+        color: #3C3A47;
+        margin: 0
     }
 
     .section-title strong{
@@ -114,7 +116,7 @@
 
 .custom-hr {
   width: 100%;
-  border-top: 2px solid #9D4EDD;
+  border-top: 1px solid #9D4EDD;
   color: #9D4EDD;
   opacity: 1;
 }
@@ -126,6 +128,55 @@
     color: #3C3A47 !important;
     background: rgba(220, 211, 244, 0.30)!important;
     backdrop-filter: blur(12px)!important;
+}
+.skill-row-tag img{
+    margin-right: 8px;
+}
+.skill-row-tag {
+    margin-bottom: 8px;
+}
+
+.btn-outline-tt-primary {
+    --bs-btn-color: #3C3A47;
+    --bs-btn-border-color: #9D4EDD;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #9D4EDD;
+    --bs-btn-hover-border-color: #9D4EDD;
+    --bs-btn-focus-shadow-rgb: 30, 48, 243;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #7d40af;
+    --bs-btn-active-border-color: #7d40af;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: rgb(243, 30, 232);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: rgb(243, 30, 232);
+    --bs-gradient: none;
+}
+.card-projects > .col > .card {
+
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: 0.375rem;
+    color: #3C3A47;
+    --bs-card-cap-bg: rgba(220, 211, 244, 0.80);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: rgba(220, 211, 244, 0.30);
+    backdrop-filter: blur(12.199999809265137px);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+}
+.card-projects > .col > .card > .card-header{
+    border-bottom: none;
+}
+a {
+    color: #3C3A47;
+    text-decoration: none;
+}
+#index-hero strong {
+    /* your styles here */
+    color: #9D4EDD;
+    font-weight: 700;
 }
  </style>
  
@@ -169,12 +220,32 @@
                             <div class="card-header">Languages</div>
                             <div class="card-body">
                                 <h5 class="card-title"></h5>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>Python</li>
-                                </ul>
+                                <div class="row">
+                                    <div class="col-12">
+                                        
+                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript" width="20" height="20"/>JavaScript</div>
+                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" alt="Typescript" width="20" height="20"/>Typescript</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- UI & UX Design -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <div class="card border-tt-card text-bg-tt-card">
+                            <div class="card-header">UI & UX Design</div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" width="20" height="20"/>Figma</div>
+                                        <div class="skill-row-tag"><img src="https://upload.vectorlogo.zone/logos/adobe_illustrator/images/8cf40c06-e920-4d78-8171-6941d7ab675e.svg" alt="AdobeXD" width="20" height="20"/>AdobeXD</div>
+                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg" alt="Sketch" width="20" height="20"/>Sketch</div>
+
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -184,42 +255,14 @@
                             <div class="card-header">Tools</div>
                             <div class="card-body">
                                 <h5 class="card-title"></h5>
-                                <ul>
-                                    <li>VS Code</li>
-                                    <li>Git</li>
-                                    <li>Webpack</li>
-                                    <li>Babel</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Other Card -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div class="card border-tt-card text-bg-tt-card">
-                            <div class="card-header">Other</div>
-                            <div class="card-body">
-                                <h5 class="card-title"></h5>
-                                <ul>
-                                    <li>Figma</li>
-                                    <li>Adobe XD</li>
-                                    <li>Sketch</li>
-                                    <li>InVision</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Version Control Card -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
-                        <div class="card border-tt-card text-bg-tt-card">
-                            <div class="card-header">Version control</div>
-                            <div class="card-body">
-                                <h5 class="card-title"></h5>
-                                <ul>
-                                    <li>Git</li>
-                                    <li>GitHub</li>
-                                    <li>GitLab</li>
-                                    <li>Bitbucket</li>
-                                </ul>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="skill-row-tag"><img src="https://raw.githubusercontent.com/gilbarbara/logos/main/logos/visual-studio.svg" alt="Visual Studio Code" width="20" height="20"/>VS Code</div>
+                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="20" height="20"/>Git</div>
+                                        <div class="skill-row-tag"><img src="https://upload.vectorlogo.zone/logos/github/images/47bfd2d4-712f-4dee-9315-f99c611b7598.svg" alt="GitHub" width="20" height="20"/>GitHub</div>
+                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/js_webpack/js_webpack-icon.svg" alt="Webpack" width="20" height="20"/>Webpack</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -235,6 +278,24 @@
                                     <li>Vue.js</li>
                                     <li>Django</li>
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Other -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                        <div class="card border-tt-card text-bg-tt-card">
+                            <div class="card-header">Other</div>
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML" width="20" height="20"/>HTML</div>
+                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="CSS" width="20" height="20"/>CSS</div>
+                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg" alt="Bootstrap" width="20" height="20"/>Bootstrap</div>
+                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind" width="20" height="20"/>Tailwind</div>
+                                        <div class="skill-row-tag"><img src="https://www.svgrepo.com/show/353527/bulma.svg" alt="Bulma" width="20" height="20"/>Bulma</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -259,7 +320,10 @@
                     <div class="row justify-content-between">
                         <div class="col-lg-6">
                             <p class="mb-4">
-                                I'm Thanasis (Theo) Theodorou, a web developer based north of London with a unique journey from electronics and technical systems to web development. My transition from being a Senior Technical Officer to a Web Developer at the University of Hertfordshire has given me a distinctive perspective on problem-solving and technical implementation.
+                                Hello! I'm Thanasis Theo,
+                            </p>
+                            <p class="mb-4">
+                                 A web developer based north of London with a unique journey from electronics and technical systems to web development. My transition from being a Senior Technical Officer to a Web Developer at the University of Hertfordshire has given me a distinctive perspective on problem-solving and technical implementation.
                             </p>
                             
                             <p class="mb-4">
@@ -269,18 +333,24 @@
                             <p class="mb-4">
                                 When I'm not coding, you'll find me exploring new technologies, working on side projects, or delivering good vibes wherever I go. I believe in creating web experiences that are not just functional, but genuinely enjoyable to use.
                             </p>
-                            <button type="button" class="btn btn-lg btn-outline-primary">Primary</button>
+                            <button type="button" class="btn btn-lg btn-outline-tt-primary">Read more  → </button>
                         </div>
                         
                         <div class="col-lg-4">
                             <div class="card about-card">
                                 <div class="card-body text-center">
-                                    <img src="assets/profile.png" class="img-fluid rounded-pill mb-3" alt="Thanasis Theo" style="width: 279px; height: 382px; object-fit: cover;">
+                                    <div style="position: relative;">
+                                        <img src="./assets/tt-dot-decorations.svg" alt="Dot Decorations" style="position: absolute; top: -20px; left: -20px; width: 100px; height: 100px; z-index: 0;">
+                                        <img src="./assets/tt-dot-decorations.svg" alt="Dot Decorations" style="position: absolute; bottom: -20px; right: -20px; width: 100px; height: 100px; z-index: 0;">
+                                        <img src="./assets/ougabouga2.jpg" class="img-fluid  mb-3" alt="Thanasis Theo" style="width: 279px; height: 382px; object-fit: cover; border-radius: 100px;">
+                                    </div>
+                                    
                                     <h5>Quick Facts</h5>
                                     <p class="small mb-1"><strong>Location:</strong> North of London, UK</p>
                                     <p class="small mb-1"><strong>Current Role:</strong> Web Developer</p>
                                     <p class="small mb-1"><strong>Experience:</strong> 2+ years in web dev</p>
                                     <p class="small mb-1"><strong>Specialty:</strong> Frontend Development</p>
+                                    <hr class="custom-hr">
                                 </div>
                             </div>
                         </div>
@@ -300,55 +370,50 @@
             </div>
                     
             <!-- Skills Cards Row -->
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4 card-projects">
                 <!-- Card 1 -->
                 <div class="col">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
+                        <div class="card-header">Featured</div>
                         <div class="card-body">
                             <h5 class="card-title">Card 1</h5>
                             <p class="card-text">
                                 This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                             </p>
+                            <button type="button" class="btn btn-lg btn-outline-tt-primary">Read more  → </button>
                         </div>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
+                        <div class="card-header">Featured</div>
                         <div class="card-body">
                             <h5 class="card-title">Card 2</h5>
                             <p class="card-text">
                                 This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                             </p>
+                            <button type="button" class="btn btn-lg btn-outline-tt-primary">Read more  → </button>
                         </div>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
+                        <div class="card-header">Featured</div>
                         <div class="card-body">
                             <h5 class="card-title">Card 3</h5>
                             <p class="card-text">
                                 This is a longer card with supporting text below as a natural lead-in to additional content.
                             </p>
+                            <button type="button" class="btn btn-lg btn-outline-tt-primary">Read more  → </button>
                         </div>
                     </div>
                 </div>
-                <!-- Card 4 
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card 4</h5>
-                            <p class="card-text">
-                                This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                        </div>
-                    </div>
-                </div>-->
+                
             </div>
 
                 </div>
@@ -376,21 +441,37 @@
                             </p>
                             
                             
-                            
-                            
-                            <button type="button" class="btn btn-lg btn-outline-primary">Primary</button>
+
+
+                            <button type="button" class="btn btn-lg btn-outline-tt-primary">Primary</button>
                         </div>
                         
                         <div class="col-lg-3">
-                            <div class="card" >
+                            <div class="card border-tt-card text-bg-tt-card" >
+                                <div class="card-header">Message me here:</div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Message me here:</h5>
-                                    <ul>
-                                        <li>Email: example@example.com</li>
-                                        <li>Phone: (123) 456-7890</li>
-                                        <li>LinkedIn: linkedin.com/in/yourprofile</li>
-                                        <li>GitHub: github.com/yourusername</li>
-                                    </ul>
+                                    
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="skill-row-tag"></div>
+                                                <i class="ph ph-envelope" style="font-size:20px;vertical-align:middle;margin-right:8px;"></i>
+                                                <a href="mailto:thanasisth1998@gmail.com">thanasisth1998@gmail.com</a>
+                                            </div>
+                                            <div class="skill-row-tag">
+                                                <i class="ph ph-phone" style="font-size:20px;vertical-align:middle;margin-right:8px;"></i>
+                                                <a href="tel:1234567890">(123) 456-7890</a>
+                                            </div>
+                                            <div class="skill-row-tag">
+                                                <i class="ph ph-linkedin-logo" style="font-size:20px;vertical-align:middle;margin-right:8px;"></i>
+                                                <a href="https://www.linkedin.com/in/thanasis-theodorou-cy/" target="_blank" rel="noopener">linkedin.com/theo</a>
+                                            </div>
+                                            <div class="skill-row-tag">
+                                                <i class="ph ph-github-logo" style="font-size:20px;vertical-align:middle;margin-right:8px;"></i>
+                                                <a href="https://github.com/ThanasisTh98" target="_blank" rel="noopener">github.com/ThanasisTh98</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                                 </div>
                         </div>
