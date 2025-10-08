@@ -5,41 +5,6 @@ Welcome to my personal portfolio website! This project showcases my skills as a 
 
 🌐 **Live Site**: https://thanasisth98.github.io/theo-webdev.io/
 
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm 
-
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/ThanasisTh98/theo-webdev.io.git
-
-# Navigate to project directory
-cd theo-webdev.io
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-### Available Scripts
-- `npm run start` - Start live server on port 3000
-- `npm run dev` - Start development server with file watching
-- `npm run build` - Build the project
-- `npm run deploy` - Deploy preparation
-
-## Stack
-
-- **HTML5** - Standard 
-- **CSS3** - Vanilla Styling
-- **Bootstrap 5** - Responsive framework, easy to work on
-- **JavaScript** - Vanilla JS
-- **Google Fonts** - Typography (Free)
-- **Phosphor Icons** - Free icon library
 
 ## Project Structure
 
@@ -49,33 +14,11 @@ theo-webdev.io/
 ├── about.html          # About page - Personal story & skills
 ├── resume.html         # Professional resume with detailed experience
 ├── projects.html       # Projects showcase (coming soon)
-├── assets/             # Images, icons, and media
-│   ├── favicon.ico     # Site favicon
-│   ├── Logo-dark.png   # Brand logo
-│   ├── profile.png     # Profile image
-│   └── ...             # Project images
-├── css/                # Stylesheets
-│   ├── styles.css      # Bootstrap theme styles
-│   └── main.css        # Additional custom styles
-├── js/                 # JavaScript files
-│   └── scripts.js      # Main scripts
-├── package.json        # Project dependencies and scripts
-├── .gitignore          # Git ignore rules
-└── README.md           # Project documentation
+│   ├── Codepen         # Using codepen to showcase random components i've created on a whim
+│   ├── Cafe-Royal      # Redesigning my cousins cafe website to more modern standards 
+│   ├── Going out       # Re-imagining a website i created for my first year at uni 
+└──
 ```
-
-## Features
-
-- **Responsive Design** - Works perfectly on all devices and screen sizes
-- **Modern UI** - Clean, professional design with consistent color scheme
-- **Live London Time** - Real-time clock displaying current London time
-- **Dynamic Updates** - GitHub API integration shows last commit date automatically
-- **Interactive Navigation** - Smooth navigation between About, Resume, and Portfolio
-- **Skills Showcase** - Organized technical and soft skills with icons
-- **Professional Experience** - Detailed work history with achievements
-- **Phosphor Icons** - Beautiful, consistent iconography throughout
-- **Fast Loading** - Optimized assets and efficient code structure
-
 ## 🗺️ Roadmap
 
 - [x] Setup GitHub repository
@@ -106,6 +49,7 @@ This project is open source and available under the [MIT License](LICENSE).
 **Thanasis Theo**
 - GitHub: [@ThanasisTh98](https://github.com/ThanasisTh98)
 - Portfolio: [theo-webdev.io](https://thanasisth98.github.io/theo-webdev.io/)
+
 
 
 
