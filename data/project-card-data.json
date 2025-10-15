@@ -4,7 +4,7 @@
       {
         "title": "Codepen Portfolio",
         "categories": ["Featured", "CSS", "JavaScript"],
-        "description": "A collection of interactive demos and experiments showcasing modern CSS techniques, JavaScript animations, and creative web solutions.",
+        "description": "My collection of demos and experiments using whatever comes to mind. Mostly using vanilla JS, CSS and HTML",
         "image": "./assets/codepen.png",
         "buttons": [
           {
@@ -23,27 +23,32 @@
       {
         "title": "University Website",
         "categories": ["Professional", "Web Design"],
-        "description": "Complete redesign and development of the University of Hertfordshire web platform, focusing on accessibility and user experience.",
-        "image": "https://placehold.co/600x400/7D40AF/FFFFFF/png?text=Uni+Website",
+        "description": "A quick snapshot of my work at the University of Hertfordhsire. Detailing one of my many projects I've worked on.",
+        "image": "./assets/white-logo.png",
         "buttons": [
           {
             "label": "Visit Site",
             "href": "https://www.herts.ac.uk",
             "class": "btn-outline-tt-primary",
             "target": "_blank"
+          },
+          {
+            "label": "Learn More",
+            "href": "university-website.html",
+            "class": "btn-outline-tt-secondary"
           }
         ]
       },
       {
-        "title": "Personal Portfolio",
-        "categories": ["JS", "Figma", "Bootstrap"],
-        "description": "This very website! Built with modern web technologies, featuring dynamic content loading and responsive design.",
-        "image": "https://placehold.co/600x400/3C3A47/FFFFFF/png?text=Portfolio",
+        "title": "Cafe Royal - Redesign & rebranding",
+        "categories": ["Figma", "UI/UX"],
+        "description": "A modern redesign and rebranding of the Cafe Royal website. This project is still in the design phase using Figma.",
+        "image": "./assets/cafe-royal-pic.png",
         "buttons": [
           {
-            "label": "View Code",
-            "href": "https://github.com/your-username/portfolio",
-            "class": "btn-outline-tt-primary",
+            "label": "Learn More",
+            "href": "project-cafe-royal.html",
+            "class": "btn-outline-tt-secondary",
             "target": "_blank"
           }
         ]

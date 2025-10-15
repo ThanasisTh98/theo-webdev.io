@@ -17,6 +17,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
+        <link href="css/animations.css" rel="stylesheet" />
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
         <!-- Navigation and Common utilities -->
         <script src="js/navigation.js"></script>
@@ -24,6 +25,7 @@
         <script src="js/common.js"></script>
         <script src="js/about.js"></script>
         <script src="js/projects.js"></script>
+        <script src="js/animations.js"></script>
         <script src="js/sub-page-titles.js"></script>
 </head>
 
@@ -48,47 +50,47 @@
     <div class="container bg-container">
         
         <!-- Hero Section Placeholder -->
-        <div id="sub-page-hero-placeholder"></div>
+        <div id="sub-page-hero-placeholder" class="fade-in"></div>
 
         <!-- About Content Section -->
-        <section class="py-5" id="about-content">
+        <section class="py-5 fade-in" id="about-content">
             <div class="container">
-                <div class="section-title d-flex flex-row">
+                <div class="section-title d-flex flex-row slide-in-left">
                     <div class="p-2"><h2><strong>#</strong>personal-info</h2></div>
                     <div class="hr-container">
                         <hr class="custom-hr">
                     </div>
                 </div>
                 <!-- About JS inject -->
-                <div id="about-placeholder"></div>
+                <div id="about-placeholder" class="scale-in"></div>
             </div>
         </section>
         
         <!-- Skills Section -->
-        <section class="py-5" id="skills-content">
+        <section class="py-5 fade-in" id="skills-content">
             <div class="container">
-                <div class="section-title d-flex flex-row">
+                <div class="section-title d-flex flex-row slide-in-right">
                     <div class="p-2"><h2><strong>#</strong>skills</h2></div>
                     <div class="hr-container">
                         <hr class="custom-hr">
                     </div>
                 </div>
                 <!-- Skills JS inject -->
-                <div id="skills-placeholder"></div>
+                <div id="skills-placeholder" class="stagger-children"></div>
             </div>
         </section>
         
         <!-- Fun Facts Section -->
-        <section class="py-5">
+        <section class="py-5 fade-in">
             <div class="container">
-                <div class="section-title d-flex flex-row">
+                <div class="section-title d-flex flex-row slide-in-left">
                     <div class="p-2"><h2><strong>#</strong>fun-facts</h2></div>
                     <div class="hr-container">
                         <hr class="custom-hr">
                     </div>
                 </div>
                 
-                <div class="row g-3">
+                <div class="row g-3 stagger-children">
                     <div class="col-md-6 col-lg-4">
                         <button type="button" class="btn btn-outline-tt-primary w-100 h-100 d-flex flex-column justify-content-center align-items-center p-3">
                             <i class="ph ph-barbell mb-2" style="font-size: 24px; color: #9D4EDD;"></i>
@@ -166,6 +168,9 @@
             
             // Load footer
             document.getElementById('footer-placeholder').innerHTML = createFooter();
+            
+            // Initialize animations
+            initializeAnimations();
         });
     </script>
 </body>

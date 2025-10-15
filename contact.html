@@ -17,6 +17,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
+        <link href="css/animations.css" rel="stylesheet" />
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
         <!-- Navigation and Common utilities -->
         <script src="js/navigation.js"></script>
@@ -24,6 +25,7 @@
         <script src="js/common.js"></script>
         <script src="js/about.js"></script>
         <script src="js/projects.js"></script>
+        <script src="js/animations.js"></script>
         <script src="js/sub-page-titles.js"></script>
 </head>
 
@@ -74,19 +76,19 @@
     <div class="container bg-container">
         
         <!-- Hero Section Placeholder -->
-        <div id="sub-page-hero-placeholder"></div>
+        <div id="sub-page-hero-placeholder" class="fade-in"></div>
 
         <!-- Contact Information Section -->
-        <section class="py-5" id="contact-info">
+        <section class="py-5 fade-in" id="contact-info">
             <div class="container">
-                <div class="section-title d-flex flex-row">
+                <div class="section-title d-flex flex-row slide-in-left">
                     <div class="p-2"><h2><strong>#</strong>get-in-touch</h2></div>
                     <div class="hr-container">
                         <hr class="custom-hr">
                     </div>
                 </div>
                 
-                <div class="row">
+                <div class="row stagger-children">
                     <div class="col-lg-6">
                         <div class="contact-card">
                             <h4 class="mb-4">Contact Methods</h4>
@@ -126,16 +128,6 @@
                             <p><strong>Position:</strong> Lead Web Developer @ University of Hertfordshire</p>
                             <p><strong>Location:</strong> North of London, UK</p>
                             <p><strong>Response Time:</strong> Usually within 24 hours</p>
-                            
-                            <!-- <div class="mt-4">
-                                <h5>What I'm looking for:</h5>
-                                <ul class="list-unstyled">
-                                    <li><i class="ph ph-check me-2" style="color: #9D4EDD;"></i>Web development projects</li>
-                                    <li><i class="ph ph-check me-2" style="color: #9D4EDD;"></i>UI/UX collaborations</li>
-                                    <li><i class="ph ph-check me-2" style="color: #9D4EDD;"></i>Consulting opportunities</li>
-                                    <li><i class="ph ph-check me-2" style="color: #9D4EDD;"></i>Tech discussions</li>
-                                </ul>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -143,16 +135,16 @@
         </section>
         
         <!-- Quick Contact Section -->
-        <section class="py-5">
+        <section class="py-5 fade-in">
             <div class="container">
-                <div class="section-title d-flex flex-row">
+                <div class="section-title d-flex flex-row slide-in-right">
                     <div class="p-2"><h2><strong>#</strong>quick-actions</h2></div>
                     <div class="hr-container">
                         <hr class="custom-hr">
                     </div>
                 </div>
                 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center scale-in">
                     <div class="col-lg-8 text-center">
                         <p class="mb-4">Ready to start a conversation? Choose your preferred method:</p>
                         <div class="d-flex justify-content-center gap-3 flex-wrap">
@@ -190,6 +182,9 @@
             
             // Load footer
             document.getElementById('footer-placeholder').innerHTML = createFooter();
+            
+            // Initialize animations
+            initializeAnimations();
         });
     </script>
 </body>

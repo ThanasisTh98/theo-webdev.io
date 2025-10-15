@@ -17,6 +17,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
+        <link href="css/animations.css" rel="stylesheet" />
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
         <!-- Navigation and Common utilities -->
         <script src="js/navigation.js"></script>
@@ -24,6 +25,7 @@
         <script src="js/common.js"></script>
         <script src="js/about.js"></script>
         <script src="js/projects.js"></script>
+        <script src="js/animations.js"></script>
         <script src="js/sub-page-titles.js"></script>
 </head>
 
@@ -49,26 +51,26 @@
     
     <div class="container bg-container ">
         <!-- Hero Section Placeholder -->
-        <div id="sub-page-hero-placeholder"></div>
+        <div id="sub-page-hero-placeholder" class="fade-in"></div>
         
         <!-- All Projects Section -->
-        <section class="py-5" id="all-projects">
+        <section class="py-5 fade-in" id="all-projects">
             <div class="container">
-                <div class="section-title d-flex flex-row">
+                <div class="section-title d-flex flex-row slide-in-left">
                     <div class="p-2"><h2><strong>#</strong>all-projects</h2></div>
                     <div class="hr-container">
                         <hr class="custom-hr">
                     </div>
                 </div>
                 <!-- All Projects JS inject -->
-                <div id="project-cards-placeholder"></div>
+                <div id="project-cards-placeholder" class="stagger-children"></div>
             </div>
         </section>
         
         <!-- Technologies Section -
-        <section class="py-5" id="technologies">
+        <section class="py-5 fade-in" id="technologies">
             <div class="container">
-                <div class="section-title d-flex flex-row">
+                <div class="section-title d-flex flex-row slide-in-right">
                     <div class="p-2"><h2><strong>#</strong>technologies</h2></div>
                     <div class="hr-container">
                         <hr class="custom-hr">
@@ -76,40 +78,40 @@
                 </div>
                 <p class="mb-4">Technologies and tools I use to bring projects to life</p>
                 <!-- Skills JS inject --
-                <div id="skills-placeholder"></div>
+                <div id="skills-placeholder" class="stagger-children"></div>
             </div>
         </section>->
         
-        <!-- Call to Action Section -->
-        <section class="py-5">
+        <!-- Call to Action Section
+        <section class="py-5 fade-in">
             <div class="container">
-                <div class="section-title d-flex flex-row">
+                <div class="section-title d-flex flex-row slide-in-right">
                     <div class="p-2"><h2><strong>#</strong>let's-collaborate</h2></div>
                     <div class="hr-container">
                         <hr class="custom-hr">
                     </div>
                 </div>
                 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center scale-in">
                     <div class="col-lg-8 text-center">
                         <p class="mb-4">
                             Have a project in mind? I'm always interested in working on new challenges and creating impactful digital experiences.
                         </p>
                         <div class="d-flex justify-content-center gap-3 flex-wrap">
-                            <button type="button" class="btn btn-outline-tt-primary">
+                            <a href="contact.html" class="btn btn-outline-tt-primary">
                                 <i class="ph ph-envelope me-2"></i>Get In Touch
-                            </button>
-                            <button type="button" class="btn btn-outline-tt-primary">
+                            </a>
+                            <a href="https://github.com/ThanasisTh98" target="_blank" rel="noopener noreferrer" class="btn btn-outline-tt-primary">
                                 <i class="ph ph-github-logo me-2"></i>View on GitHub
-                            </button>
-                            <button type="button" class="btn btn-outline-tt-primary">
+                            </a>
+                            <a href="https://www.linkedin.com/in/thanasis-theodorou-cy/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-tt-primary">
                                 <i class="ph ph-linkedin-logo me-2"></i>Connect on LinkedIn
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </div>
     
     <!-- Footer Placeholder -->
@@ -135,6 +137,9 @@
             
             // Load footer
             document.getElementById('footer-placeholder').innerHTML = createFooter();
+            
+            // Initialize animations
+            initializeAnimations();
             
             // Add filter functionality
             const filterButtons = document.querySelectorAll('.filter-btn');
