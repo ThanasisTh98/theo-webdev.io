@@ -3,34 +3,85 @@
 
 function createNavigation(activePage = '') {
   return `
-    <nav class="navbar navbar-expand-lg bg-body-tertiary container fixed-top navbar-custom">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+
+<!-- Example Code Start-->
+    <nav class="navbar navbar-dark   fixed-top py-4">
+      <div class="container-fluid ">
+        <div class="tt-container-nav">
+        
+        <button class="navbar-toggler p-0 tt-btn-hw" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav w-100 align-items-center justify-content-center">
-            <li class="nav-item me-4">
-              <a class="nav-link ${activePage === 'about' ? 'active' : ''}" ${activePage === 'about' ? 'aria-current="page"' : ''} href="about.html">About</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link ${activePage === 'resume' ? 'active' : ''}" ${activePage === 'resume' ? 'aria-current="page"' : ''} href="resume.html">Resume</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/Logo-dark.png" class="img-fluid" alt="Thanasis Theo Logo" width="28" height="28">
-              </a>
-            </li>
-            <li class="nav-item ms-4">
-              <a class="nav-link ${activePage === 'projects' ? 'active' : ''}" ${activePage === 'projects' ? 'aria-current="page"' : ''} href="projects.html">Portfolio</a>
-            </li>
-            <li class="nav-item ms-4">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+        <a class="navbar-brand" href="#">than-theo</a>
+        <a href="#" class="cv-download-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
+            <path d="M5.75441 6.64956V7.73939C5.75441 7.85522 5.72827 7.93945 5.67598 7.9921C5.63415 8.03422 5.55049 8.05528 5.425 8.05528H3.08775C2.2616 8.05528 1.62369 7.83416 1.17402 7.39191C0.724348 6.94965 0.499512 6.3126 0.499512 5.48075V2.57453C0.499512 1.74268 0.724348 1.10563 1.17402 0.663377C1.62369 0.221125 2.2616 0 3.08775 0H5.425C5.64461 0 5.75441 0.110563 5.75441 0.331688V1.42152C5.75441 1.53735 5.72827 7.62159 5.67598 1.67424C5.63415 1.71635 5.55049 1.73741 5.425 1.73741H3.40147C3.07729 1.73741 2.842 1.81112 2.69559 1.95854C2.55964 2.09543 2.49167 2.33235 2.49167 2.6693V5.38598C2.49167 5.72294 2.55964 5.96512 2.69559 6.11254C2.842 6.24942 3.07729 6.31787 3.40147 6.31787H5.425C5.64461 6.31787 5.75441 6.42843 5.75441 6.64956Z" fill="#9D4EDD"/>
+            <path d="M7.07414 0H8.45454C8.66369 0 8.78918 0.110563 8.83101 0.331688L10.18 6.27048H10.2898L11.6075 0.331688C11.6493 0.110563 11.78 0 11.9996 0H13.38C13.5996 0 13.6781 0.110563 13.6153 0.331688L11.6388 7.7078C11.597 7.93945 11.4558 8.05528 11.2153 8.05528H9.22316C9.00356 8.05528 8.86238 7.93945 8.79963 7.7078L6.83885 0.331688C6.7761 0.110563 6.85454 0 7.07414 0Z" fill="#9D4EDD"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9407 4.89635C15.0577 4.89645 15.1698 4.94335 15.2524 5.02668L19.3701 9.17279C19.4528 9.25601 19.4994 9.3689 19.4995 9.48667V18.9635C19.4995 19.2384 19.3908 19.5018 19.1977 19.6961C19.0047 19.8905 18.7431 20 18.4701 20H7.88187C7.60885 20 7.34728 19.8905 7.15423 19.6961C6.96118 19.5018 6.85245 19.2384 6.85245 18.9635V8.84502H7.73481V18.9635C7.73481 19.0027 7.75012 19.0406 7.7777 19.0684C7.80528 19.0961 7.84286 19.1116 7.88187 19.1116H18.4701C18.5091 19.1116 18.5467 19.0961 18.5743 19.0684C18.6018 19.0406 18.6172 19.0027 18.6172 18.9635V9.9309H14.9407C14.8237 9.9309 14.7117 9.88387 14.629 9.80056C14.5462 9.71725 14.4995 9.60449 14.4995 9.48667V5.7848H13.9113V4.89635H14.9407ZM15.3819 9.04245H17.9937L15.3819 6.41257V9.04245Z" fill="#9D4EDD"/>
+            <path d="M13.176 11.4116C13.293 11.4116 13.405 11.4587 13.4877 11.542C13.5705 11.6253 13.6172 11.7381 13.6172 11.8559V15.5215L14.629 14.5035C14.7117 14.4203 14.8238 14.3739 14.9407 14.3739C15.0576 14.3739 15.1697 14.4203 15.2524 14.5035C15.335 14.5868 15.3811 14.6997 15.3811 14.8174C15.3811 14.9351 15.335 15.048 15.2524 15.1313L13.4877 16.9082C13.405 16.9914 13.2929 17.0377 13.176 17.0377C13.0591 17.0377 12.947 16.9914 12.8642 16.9082L11.0995 15.1313C11.0216 15.0471 10.9788 14.9355 10.9808 14.8205C10.9829 14.7054 11.0295 14.5956 11.1103 14.5143C11.1911 14.4329 11.3001 14.386 11.4143 14.3839C11.5286 14.3819 11.6394 14.425 11.723 14.5035L12.7348 15.5215V11.8559C12.7348 11.7381 12.7815 11.6253 12.8642 11.542C12.947 11.4587 13.059 11.4116 13.176 11.4116Z" fill="#9D4EDD"/>
+          </svg>
+        </a>
+
+
+        </div>
+
+
+        <div class="offcanvas offcanvas-end offcanvas-center offcanvas-bg my-4 " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+           
+            
+
+
+        <button type="button" class="btn-close btn-close-tt tt-btn-hw" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <a class="navbar-brand" href="#">than-theo</a>
+        <a href="#" class="cv-download-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
+            <path d="M5.75441 6.64956V7.73939C5.75441 7.85522 5.72827 7.93945 5.67598 7.9921C5.63415 8.03422 5.55049 8.05528 5.425 8.05528H3.08775C2.2616 8.05528 1.62369 7.83416 1.17402 7.39191C0.724348 6.94965 0.499512 6.3126 0.499512 5.48075V2.57453C0.499512 1.74268 0.724348 1.10563 1.17402 0.663377C1.62369 0.221125 2.2616 0 3.08775 0H5.425C5.64461 0 5.75441 0.110563 5.75441 0.331688V1.42152C5.75441 1.53735 5.72827 1.62159 5.67598 1.67424C5.63415 1.71635 5.55049 1.73741 5.425 1.73741H3.40147C3.07729 1.73741 2.842 1.81112 2.69559 1.95854C2.55964 2.09543 2.49167 2.33235 2.49167 2.6693V5.38598C2.49167 5.72294 2.55964 5.96512 2.69559 6.11254C2.842 6.24942 3.07729 6.31787 3.40147 6.31787H5.425C5.64461 6.31787 5.75441 6.42843 5.75441 6.64956Z" fill="#9D4EDD"/>
+            <path d="M7.07414 0H8.45454C8.66369 0 8.78918 0.110563 8.83101 0.331688L10.18 6.27048H10.2898L11.6075 0.331688C11.6493 0.110563 11.78 0 11.9996 0H13.38C13.5996 0 13.6781 0.110563 13.6153 0.331688L11.6388 7.7078C11.597 7.93945 11.4558 8.05528 11.2153 8.05528H9.22316C9.00356 8.05528 8.86238 7.93945 8.79963 7.7078L6.83885 0.331688C6.7761 0.110563 6.85454 0 7.07414 0Z" fill="#9D4EDD"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9407 4.89635C15.0577 4.89645 15.1698 4.94335 15.2524 5.02668L19.3701 9.17279C19.4528 9.25601 19.4994 9.3689 19.4995 9.48667V18.9635C19.4995 19.2384 19.3908 19.5018 19.1977 19.6961C19.0047 19.8905 18.7431 20 18.4701 20H7.88187C7.60885 20 7.34728 19.8905 7.15423 19.6961C6.96118 19.5018 6.85245 19.2384 6.85245 18.9635V8.84502H7.73481V18.9635C7.73481 19.0027 7.75012 19.0406 7.7777 19.0684C7.80528 19.0961 7.84286 19.1116 7.88187 19.1116H18.4701C18.5091 19.1116 18.5467 19.0961 18.5743 19.0684C18.6018 19.0406 18.6172 19.0027 18.6172 18.9635V9.9309H14.9407C14.8237 9.9309 14.7117 9.88387 14.629 9.80056C14.5462 9.71725 14.4995 9.60449 14.4995 9.48667V5.7848H13.9113V4.89635H14.9407ZM15.3819 9.04245H17.9937L15.3819 6.41257V9.04245Z" fill="#9D4EDD"/>
+            <path d="M13.176 11.4116C13.293 11.4116 13.405 11.4587 13.4877 11.542C13.5705 11.6253 13.6172 11.7381 13.6172 11.8559V15.5215L14.629 14.5035C14.7117 14.4203 14.8238 14.3739 14.9407 14.3739C15.0576 14.3739 15.1697 14.4203 15.2524 14.5035C15.335 14.5868 15.3811 14.6997 15.3811 14.8174C15.3811 14.9351 15.335 15.048 15.2524 15.1313L13.4877 16.9082C13.405 16.9914 13.2929 17.0377 13.176 17.0377C13.0591 17.0377 12.947 16.9914 12.8642 16.9082L11.0995 15.1313C11.0216 15.0471 10.9788 14.9355 10.9808 14.8205C10.9829 14.7054 11.0295 14.5956 11.1103 14.5143C11.1911 14.4329 11.3001 14.386 11.4143 14.3839C11.5286 14.3819 11.6394 14.425 11.723 14.5035L12.7348 15.5215V11.8559C12.7348 11.7381 12.7815 11.6253 12.8642 11.542C12.947 11.4587 13.059 11.4116 13.176 11.4116Z" fill="#9D4EDD"/>
+          </svg>
+        </a>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+          </div>
         </div>
       </div>
     </nav>
+    <!-- Example Code End -->
+
+
+
+
+    
   `;
 }
 
@@ -57,6 +108,96 @@ function createFooter() {
 // Common styles that can be applied to all pages
 function createCommonStyles() {
   return `
+  <style>
+  .offcanvas-body{
+    --bs-offcanvas-border-width: 0px !important;
+  }
+  .tt-btn-hw{
+    width:30px;
+    height:30px;
+  }
+  .offcanvas-bg {
+    background: #E6E0F5 !important;
+    border-radius: 12px;
+  }
+  .tt-container-nav{
+    max-width: fit-content;
+    border-radius: 12px;
+    background: rgba(220, 211, 244, 0.40);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 0 auto;
+    padding: 12px 16px;
+  }
+  
+  /* Make offcanvas-header match tt-container-nav styling */
+  .offcanvas-header {
+    border-radius: 12px;
+   
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+   
+    padding: 12px 16px !important;
+    border-bottom: none !important;
+  }
+  
+  /* Custom close button styling */
+  .btn-close-tt {
+    background: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M12.4539 0.691284L0.433056 12.7121L1.14016 13.4192L13.161 1.39839L12.4539 0.691284Z" fill="%239D4EDD"/><path d="M0.957107 0.580078L12.9779 12.6009L12.2708 13.308L0.25 1.28718L0.957107 0.580078Z" fill="%239D4EDD"/></svg>') no-repeat center center !important;
+    background-size: 14px 14px !important;
+    opacity: 1 !important;
+  }
+  
+  /* Nav link colors */
+  .nav-link {
+    color: #3C3A47 !important;
+    font-size: 40px;
+    padding: 24px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+  }
+   
+  
+  .nav-link.active {
+    color: #9D4EDD !important;
+    font-weight: 600;
+  }
+  
+  .nav-link:hover {
+    color: #9D4EDD !important;
+  }
+  
+  /* Center the offcanvas */
+  .offcanvas-center {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: fit-content !important;
+    max-width: 90vw !important;
+    height: 95vh !important;
+  }
+    .offcanvas-backdrop {
+        background-color: #ffffff0d;
+        backdrop-filter: blur(45px) brightness(1.1) contrast(1.05) saturate(1.1) hue-rotate(0deg) invert(0%) opacity(0.9) sepia(0%);
+        -webkit-backdrop-filter: blur(45px) brightness(1.1) contrast(1.05) saturate(1.1) hue-rotate(0deg) invert(0%) opacity(0.9) sepia(0%);
+    }
+  
+  .navbar-brand {
+  color: #9D4EDD !important;
+  margin-right: 154px;
+  margin-left: 154px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  }
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none"><path d="M0 0.5H12V1.5H0V0.5Z" fill="%239D4EDD"/><path d="M0 6.5H14V7.5H0V6.5Z" fill="%239D4EDD"/><path d="M0 12.5H17V13.5H0V12.5Z" fill="%239D4EDD"/></svg>') !important;
+  }
+  </style>
+
+
+
+
+
     <style>
       .download-btn {
         background-color: #1C1F33;
