@@ -1,0 +1,53 @@
+{
+  "projects": {
+    "cards": [
+      {
+        "title": "Codepen Portfolio",
+        "categories": ["Featured", "CSS", "JavaScript"],
+        "description": "A collection of interactive demos and experiments showcasing modern CSS techniques, JavaScript animations, and creative web solutions.",
+        "image": "./assets/codepen.png",
+        "buttons": [
+          {
+            "label": "View Live",
+            "href": "https://codepen.io/ThanasisTh98",
+            "class": "btn-outline-tt-primary",
+            "target": "_blank"
+          },
+          {
+            "label": "Learn More",
+            "href": "#codepen-details",
+            "class": "btn-outline-tt-secondary"
+          }
+        ]
+      },
+      {
+        "title": "University Website",
+        "categories": ["Professional", "Web Design"],
+        "description": "Complete redesign and development of the University of Hertfordshire web platform, focusing on accessibility and user experience.",
+        "image": "https://placehold.co/600x400/7D40AF/FFFFFF/png?text=Uni+Website",
+        "buttons": [
+          {
+            "label": "Visit Site",
+            "href": "https://www.herts.ac.uk",
+            "class": "btn-outline-tt-primary",
+            "target": "_blank"
+          }
+        ]
+      },
+      {
+        "title": "Personal Portfolio",
+        "categories": ["JS", "Figma", "Bootstrap"],
+        "description": "This very website! Built with modern web technologies, featuring dynamic content loading and responsive design.",
+        "image": "https://placehold.co/600x400/3C3A47/FFFFFF/png?text=Portfolio",
+        "buttons": [
+          {
+            "label": "View Code",
+            "href": "https://github.com/your-username/portfolio",
+            "class": "btn-outline-tt-primary",
+            "target": "_blank"
+          }
+        ]
+      }
+    ]
+  }
+}

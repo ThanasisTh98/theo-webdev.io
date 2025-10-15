@@ -1,0 +1,26 @@
+{
+  "contact": {
+    "title": "contact",
+    "description": "Let's connect and discuss opportunities, collaborations, or just say hello!"
+  },
+  "about": {
+    "title": "about",
+    "description": "Learn more about my journey, skills, and passion for web development."
+  },
+  "projects": {
+    "title": "projects",
+    "description": "Explore my latest work and creative solutions in web development."
+  },
+  "project": {
+    "title": "projects",
+    "description": "A showcase of my development work - from web applications to digital experiences"
+  },
+  "blog": {
+    "title": "blog",
+    "description": "Thoughts, tutorials, and insights from my development journey."
+  },
+  "services": {
+    "title": "services",
+    "description": "Professional web development services tailored to your needs."
+  }
+}

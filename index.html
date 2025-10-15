@@ -22,422 +22,103 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+        <link href="css/animations.css" rel="stylesheet" />
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
         <!-- Navigation and Common utilities -->
         <script src="js/navigation.js"></script>
+        <script src="js/skills.js"></script>
         <script src="js/common.js"></script>
+        <script src="js/about.js"></script>
+        <script src="js/projects.js"></script>
+        <script src="js/animations.js"></script>
     </head>
-    <style>
-        * {
-    font-family: 'Rajdhani', sans-serif;
-}
-    body{
-    
-        background: radial-gradient(50% 50% at 50% 50%, #9C72EF 0%, #F4F1FA 100%)!important;
-        color: #525069 !important;
-    }
-    .bg-container{
-        background: rgba(234, 230, 245, 0.60);
-        backdrop-filter: blur(2.950000047683716px);
 
-    }
-    #index-hero{
-       min-height: 60vh;
-       /* border-top: 3px solid #1c1f3348;
-       border-bottom: 3px solid #1c1f3348; */
-       justify-content: center;
-       display: flex;
-       flex-direction: column;
-    }
-    #index-hero h1{
-       font-size: 80px;
-       color: #1C1F33;
-    }
-    
-    #index-hero p{
-       font-size: 18px;
-    }
-    #index-hero span{
-        font-size: 20px;
-    }
-.py-hero{
-    padding-top: 210px;
-    padding-bottom: 100px;
-}
-#heading-hr{
-    display: flex;
-    flex-direction: row;
-    width: calc(40%);
-    margin: 1rem 0;
-    color: #9D4EDD;
-    border: 0;
-    border-top: 2px solid;
-    opacity: 1;
-}
-    .section-title{
-        padding-bottom: 41px;
-        align-items: center;
-    }
-    .section-title h2{
-        font-size: 32px;
-        font-weight: 500;
-        color: #3C3A47;
-        margin: 0
-    }
-
-    .section-title strong{
-        color: #9D4EDD;
-    }
-    #about-content span{
-        font-size: 24px;
-    }
-    .about-card{
-      background-color: transparent !important;
-      border: none !important;
-    }
-    #timeDisplay{
-      text-transform: uppercase;
-    }
-    .bg-footer{
-      border-top: 3px solid #1c1f3348;
-    }
-    .skill-tag {
-        background-color: #1C1F33;
-        color: white;
-        padding: 8px 16px;
-        border-radius: 20px;
-        margin: 4px;
-        display: inline-block;
-        font-size: 14px;
-    }
-    .skill-tag i {
-        margin-right: 6px;
-    }
-    .hr-container {
-  width: 40%;
-}
-
-.custom-hr {
-  width: 100%;
-  border-top: 1px solid #9D4EDD;
-  color: #9D4EDD;
-  opacity: 1;
-}
-.border-tt-card {
-    --bs-border-opacity: 1;
-    /* border: 1px solid #3C3A47 !important; */
-}
-.text-bg-tt-card {
-    color: #3C3A47 !important;
-    background: rgba(220, 211, 244, 0.30)!important;
-    backdrop-filter: blur(12px)!important;
-}
-.skill-row-tag img{
-    margin-right: 8px;
-}
-.skill-row-tag {
-    margin-bottom: 8px;
-}
-
-.btn-outline-tt-primary {
-    --bs-btn-color: #3C3A47;
-    --bs-btn-border-color: #9D4EDD;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #9D4EDD;
-    --bs-btn-hover-border-color: #9D4EDD;
-    --bs-btn-focus-shadow-rgb: 30, 48, 243;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #7d40af;
-    --bs-btn-active-border-color: #7d40af;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: rgb(243, 30, 232);
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: rgb(243, 30, 232);
-    --bs-gradient: none;
-}
-.card-projects > .col > .card {
-
-    --bs-card-border-color: var(--bs-border-color-translucent);
-    --bs-card-border-radius: 0.375rem;
-    color: #3C3A47;
-    --bs-card-cap-bg: rgba(220, 211, 244, 0.80);
-    --bs-card-cap-color: ;
-    --bs-card-height: ;
-    --bs-card-color: ;
-    --bs-card-bg: rgba(220, 211, 244, 0.30);
-    backdrop-filter: blur(12.199999809265137px);
-    --bs-card-img-overlay-padding: 1rem;
-    --bs-card-group-margin: 0.75rem;
-}
-.card-projects > .col > .card > .card-header{
-    border-bottom: none;
-}
-a {
-    color: #3C3A47;
-    text-decoration: none;
-}
-#index-hero strong {
-    /* your styles here */
-    color: #9D4EDD;
-    font-weight: 700;
-}
- </style>
  
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <div id="navigation-placeholder"></div>
 
-<div class="container bg-container p-5">
+<div class="container bg-container">
             <!--  Hero Section -->
             <section class="py-hero" id="index-hero">
-                <span>
+                <span class="hero-subtitle">
                     Based North of London - <strong><span id="timeDisplay"></span></strong>
                 </span>
-                <h1>
+                <h1 class="hero-title">
                     Hi, my name is <strong>Theo</strong>
                 </h1>
-                <div class="container py-5 px-0 d-flex flex-column justify-content-start align-items-start">
+                <div class="container py-5 px-0 d-flex flex-column justify-content-start align-items-start hero-content">
                     <p>Currently → <strong>Lead Web Developer</strong> @ Uni of Herts</p>
                     <p>Previously → Web Developer @ Uni of Herts</p>
-                    <p>Delivering  → Good Vibes ฅ^•ﻌ•^ฅ </p>
+                    <p>Delivering → Accessible & responsive digital experiences for the web</p>
                 </div>
             </section>
 
-            <!-- skills Content -->
-            <section class="py-5" id="about-content">
-                <!-- Section title row -->
-                <div class="section-title d-flex flex-row">
-                    <div class="p-2">
-                        <h2><strong>#</strong>skills</h2>
-                    </div>
-                    <div class="hr-container">
-                        <hr class="custom-hr">
-                    </div>
+    <!-- skills Content -->
+    <section class="py-5 fade-in" id="about-content">
+        <!-- Section title row -->
+        <div class="section-title d-flex flex-row slide-in-left">
+            <div class="p-2">
+                <h2><strong>#</strong>skills</h2>
+            </div>
+            <div class="hr-container">
+                <hr class="custom-hr">
+            </div>
+        </div>
+        <!-- Skills JS inject-->
+        <div id="skills-placeholder" class="stagger-children"></div>              
+    </section>
+
+    <!-- About Content -->
+    <section class="py-5 fade-in" id="about-content">
+        <div class="container">
+            <div class="section-title d-flex flex-row slide-in-right">
+                <div class="p-2">
+                    <h2>
+                        <strong>#</strong>about
+                    </h2>
                 </div>
-                <!-- Skills cards row -->
-                <div class="row justify-content-center">
-                    <!-- Languages Card -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-3 mb-sm-0">
-                        <div class="card border-tt-card text-bg-tt-card">
-                            <div class="card-header">Languages</div>
-                            <div class="card-body">
-                                <h5 class="card-title"></h5>
-                                <div class="row">
-                                    <div class="col-12">
-                                        
-                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript" width="20" height="20"/>JavaScript</div>
-                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" alt="Typescript" width="20" height="20"/>Typescript</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <!-- UI & UX Design -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div class="card border-tt-card text-bg-tt-card">
-                            <div class="card-header">UI & UX Design</div>
-                            <div class="card-body">
-                                <h5 class="card-title"></h5>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" width="20" height="20"/>Figma</div>
-                                        <div class="skill-row-tag"><img src="https://upload.vectorlogo.zone/logos/adobe_illustrator/images/8cf40c06-e920-4d78-8171-6941d7ab675e.svg" alt="AdobeXD" width="20" height="20"/>AdobeXD</div>
-                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg" alt="Sketch" width="20" height="20"/>Sketch</div>
-
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Tools Card -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
-                        <div class="card border-tt-card text-bg-tt-card">
-                            <div class="card-header">Tools</div>
-                            <div class="card-body">
-                                <h5 class="card-title"></h5>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="skill-row-tag"><img src="https://raw.githubusercontent.com/gilbarbara/logos/main/logos/visual-studio.svg" alt="Visual Studio Code" width="20" height="20"/>VS Code</div>
-                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="20" height="20"/>Git</div>
-                                        <div class="skill-row-tag"><img src="https://upload.vectorlogo.zone/logos/github/images/47bfd2d4-712f-4dee-9315-f99c611b7598.svg" alt="GitHub" width="20" height="20"/>GitHub</div>
-                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/js_webpack/js_webpack-icon.svg" alt="Webpack" width="20" height="20"/>Webpack</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Frameworks Card -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
-                        <div class="card border-tt-card text-bg-tt-card">
-                            <div class="card-header">Frameworks</div>
-                            <div class="card-body">
-                                <h5 class="card-title"></h5>
-                                <ul>
-                                    <li>React</li>
-                                    <li>Angular</li>
-                                    <li>Vue.js</li>
-                                    <li>Django</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Other -->
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
-                        <div class="card border-tt-card text-bg-tt-card">
-                            <div class="card-header">Other</div>
-                            <div class="card-body">
-                                <h5 class="card-title"></h5>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML" width="20" height="20"/>HTML</div>
-                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="CSS" width="20" height="20"/>CSS</div>
-                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg" alt="Bootstrap" width="20" height="20"/>Bootstrap</div>
-                                        <div class="skill-row-tag"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind" width="20" height="20"/>Tailwind</div>
-                                        <div class="skill-row-tag"><img src="https://www.svgrepo.com/show/353527/bulma.svg" alt="Bulma" width="20" height="20"/>Bulma</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-            <!-- About Content -->
-            <section class="py-5" id="about-content"> 
-                <div class="container">
-       
-            <div class="section-title d-flex flex-row">
-                <div class="p-2"><h2><strong>#</strong>about</h2></div>
                 <div class="hr-container">
                     <hr class="custom-hr">
                 </div>
             </div>
-                    
-                    
-                    
-                    <div class="row justify-content-between">
-                        <div class="col-lg-6">
-                            <p class="mb-4">
-                                Hello! I'm Thanasis Theo,
-                            </p>
-                            <p class="mb-4">
-                                 A web developer based north of London with a unique journey from electronics and technical systems to web development. My transition from being a Senior Technical Officer to a Web Developer at the University of Hertfordshire has given me a distinctive perspective on problem-solving and technical implementation.
-                            </p>
-                            
-                            <p class="mb-4">
-                                My background in electronics, network systems, and hardware provides me with a deep understanding of how systems work at a fundamental level. This technical foundation, combined with my passion for creating engaging digital experiences, allows me to approach web development with both creativity and technical precision.
-                            </p>
-                            
-                            <p class="mb-4">
-                                When I'm not coding, you'll find me exploring new technologies, working on side projects, or delivering good vibes wherever I go. I believe in creating web experiences that are not just functional, but genuinely enjoyable to use.
-                            </p>
-                            <button type="button" class="btn btn-lg btn-outline-tt-primary">Read more  → </button>
-                        </div>
-                        
-                        <div class="col-lg-4">
-                            <div class="card about-card">
-                                <div class="card-body text-center">
-                                    <div style="position: relative;">
-                                        <img src="./assets/tt-dot-decorations.svg" alt="Dot Decorations" style="position: absolute; top: -20px; left: -20px; width: 100px; height: 100px; z-index: 0;">
-                                        <img src="./assets/tt-dot-decorations.svg" alt="Dot Decorations" style="position: absolute; bottom: -20px; right: -20px; width: 100px; height: 100px; z-index: 0;">
-                                        <img src="./assets/ougabouga2.jpg" class="img-fluid  mb-3" alt="Thanasis Theo" style="width: 279px; height: 382px; object-fit: cover; border-radius: 100px;">
-                                    </div>
-                                    
-                                    <h5>Quick Facts</h5>
-                                    <p class="small mb-1"><strong>Location:</strong> North of London, UK</p>
-                                    <p class="small mb-1"><strong>Current Role:</strong> Web Developer</p>
-                                    <p class="small mb-1"><strong>Experience:</strong> 2+ years in web dev</p>
-                                    <p class="small mb-1"><strong>Specialty:</strong> Frontend Development</p>
-                                    <hr class="custom-hr">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- About JS inject-->
+            <div id="about-placeholder" class="scale-in"></div>
+        </div>
+    </section>
+    
+    <!-- Projects Content -->
+    <section class="py-5 fade-in" id="projects-content">
+        <div class="container">
+            <div class="section-title d-flex flex-row slide-in-left">
+                <div class="p-2">
+                    <h2>
+                        <strong>#</strong>projects
+                    </h2>
                 </div>
-            </section>
-
-            <!-- Projects Content -->
-            <section class="py-5" id="projects-content"> 
-                <div class="container">
-       
-            <div class="section-title d-flex flex-row">
-                <div class="p-2"><h2><strong>#</strong>projects</h2></div>
-                    <div class="hr-container">
+                <div class="hr-container">
                     <hr class="custom-hr">
-                    </div>
+                </div>
             </div>
-                    
-            <!-- Skills Cards Row -->
-            <div class="row row-cols-1 row-cols-md-3 g-4 card-projects">
-                <!-- Card 1 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
-                        <div class="card-header">Featured</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card 1</h5>
-                            <p class="card-text">
-                                This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <button type="button" class="btn btn-lg btn-outline-tt-primary">Read more  → </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
-                        <div class="card-header">Featured</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card 2</h5>
-                            <p class="card-text">
-                                This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <button type="button" class="btn btn-lg btn-outline-tt-primary">Read more  → </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://placehold.co/600x400/png" class="card-img-top" alt="...">
-                        <div class="card-header">Featured</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card 3</h5>
-                            <p class="card-text">
-                                This is a longer card with supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <button type="button" class="btn btn-lg btn-outline-tt-primary">Read more  → </button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-                </div>
-            </section>
-
-           
+            <!-- Project JS inject-->
+            <div id="project-cards-placeholder" class="stagger-children"></div>
+        </div>
+    </section>
 
             <!-- Contact Content -->
-            <section class="py-5" id="contact-content"> 
+            <section class="py-5 fade-in" id="contact-content"> 
                 <div class="container">
        
-            <div class="section-title d-flex flex-row">
+            <div class="section-title d-flex flex-row slide-in-right">
                 <div class="p-2"><h2><strong>#</strong>contact</h2></div>
                 <div class="hr-container">
                     <hr class="custom-hr">
                 </div>
             </div>
                     
-                    
-                    
-                    <div class="row justify-content-between">
+                    <div class="row justify-content-between scale-in">
                         <div class="col-lg-6">
                             <p class="mb-4">
                                Have an opportunity or role that might be a good fit? I’d be happy to hear from you—please get in touch!
@@ -496,16 +177,28 @@ a {
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         
-        <!-- Initialize Navigation and Footer -->
+        <!-- Initialize Navigation, Skills and Footer -->
         <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Load navigation
-            document.getElementById('navigation-placeholder').innerHTML = createNavigation('about');
-            
-            // Load footer
-            document.getElementById('footer-placeholder').innerHTML = createFooter();
-        });
-        </script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load navigation
+        document.getElementById('navigation-placeholder').innerHTML = createNavigation('home');
+        
+        // Load skills
+        initializeSkills();
+        
+        // Load about content
+        initializeAbout();
+        
+        // Load projects
+        initializeProjects();
+        
+        // Load footer
+        document.getElementById('footer-placeholder').innerHTML = createFooter();
+        
+        // Initialize animations
+        initializeAnimations();
+    });
+    </script>
 
 
     </body>

@@ -19,6 +19,21 @@ theo-webdev.io/
 │   ├── Going out       # Re-imagining a website i created for my first year at uni 
 └──
 ```
+## 🚀 Unique Architecture
+
+This portfolio uses a **custom component-based architecture** built with vanilla JavaScript and JSON data sources - no frameworks needed! 
+
+### Dynamic Content Injection
+Instead of traditional static HTML, I've created a modular system where:
+- **JSON files** store all content data (`skills-data.json`, `about-data.json`, `project-card-data.json` etc.)
+- **JavaScript components** (`skills.js`, `about.js`, `projects.js`, `navigation.js` etc.) fetch data and generate HTML
+- **Dynamic injection** happens at runtime, populating placeholder divs with fully rendered content
+
+### My reasoning
+I know this isn't the standard way of doing things, but in my current role as Web Developer this is how we've been creating components.
+- Additionally, this allows me to come into the JSON files and change the data to more up to date one or add more card to sections like the "Projects"
+It's my own take on component architecture using pure vanilla JS - sometimes the best solutions are the simplest ones!
+
 ## 🗺️ Roadmap
 
 - [x] Setup GitHub repository

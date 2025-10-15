@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>Projects - TT</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <!-- Navigation and Common utilities -->
+        <script src="js/navigation.js"></script>
+        <script src="js/skills.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/about.js"></script>
+        <script src="js/projects.js"></script>
+        <script src="js/sub-page-titles.js"></script>
+</head>
+
+<style>
+.sub-page-hero {
+    padding: 100px 0px 50px 0px;
+    text-align: left;
+}
+
+.project-filter {
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+</style>
+
+<body>
+    <!-- Navigation Placeholder -->
+    <div id="navigation-placeholder"></div>
+    
+    <div class="container bg-container ">
+        <!-- Hero Section Placeholder -->
+        <div id="sub-page-hero-placeholder"></div>
+        
+        <!-- All Projects Section -->
+        <section class="py-5" id="all-projects">
+            <div class="container">
+                <div class="section-title d-flex flex-row">
+                    <div class="p-2"><h2><strong>#</strong>all-projects</h2></div>
+                    <div class="hr-container">
+                        <hr class="custom-hr">
+                    </div>
+                </div>
+                <!-- All Projects JS inject -->
+                <div id="project-cards-placeholder"></div>
+            </div>
+        </section>
+        
+        <!-- Technologies Section -
+        <section class="py-5" id="technologies">
+            <div class="container">
+                <div class="section-title d-flex flex-row">
+                    <div class="p-2"><h2><strong>#</strong>technologies</h2></div>
+                    <div class="hr-container">
+                        <hr class="custom-hr">
+                    </div>
+                </div>
+                <p class="mb-4">Technologies and tools I use to bring projects to life</p>
+                <!-- Skills JS inject --
+                <div id="skills-placeholder"></div>
+            </div>
+        </section>->
+        
+        <!-- Call to Action Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="section-title d-flex flex-row">
+                    <div class="p-2"><h2><strong>#</strong>let's-collaborate</h2></div>
+                    <div class="hr-container">
+                        <hr class="custom-hr">
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <p class="mb-4">
+                            Have a project in mind? I'm always interested in working on new challenges and creating impactful digital experiences.
+                        </p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <button type="button" class="btn btn-outline-tt-primary">
+                                <i class="ph ph-envelope me-2"></i>Get In Touch
+                            </button>
+                            <button type="button" class="btn btn-outline-tt-primary">
+                                <i class="ph ph-github-logo me-2"></i>View on GitHub
+                            </button>
+                            <button type="button" class="btn btn-outline-tt-primary">
+                                <i class="ph ph-linkedin-logo me-2"></i>Connect on LinkedIn
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Initialize Navigation, Projects, Skills and Footer -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load navigation
+            document.getElementById('navigation-placeholder').innerHTML = createNavigation('projects');
+            
+            // Load sub-page hero
+            autoInitializeSubPageHero(); // Will auto-detect 'project' from filename
+            
+            // Load projects
+            initializeProjects();
+            
+            // Load skills for technologies section
+            initializeSkills();
+            
+            // Load footer
+            document.getElementById('footer-placeholder').innerHTML = createFooter();
+            
+            // Add filter functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Filter projects (you can implement this logic in your projects.js)
+                    const filter = this.getAttribute('data-filter');
+                    // filterProjects(filter);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

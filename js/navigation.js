@@ -2,76 +2,70 @@
 // This file contains the reusable navigation HTML and functionality
 
 function createNavigation(activePage = '') {
+  // Helper function to determine if a page should be active
+  const isActive = (page) => {
+    if (activePage === page) return 'active';
+    // Handle special cases where multiple pages might map to same nav item
+    if (activePage === 'project' && page === 'projects') return 'active';
+    return '';
+  };
+
   return `
 
 <!-- Example Code Start-->
-    <nav class="navbar navbar-dark   fixed-top py-4">
+    <nav class="navbar navbar-dark fixed-top py-4">
       <div class="container-fluid ">
         <div class="tt-container-nav">
         
         <button class="navbar-toggler p-0 tt-btn-hw" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">than-theo</a>
-        <a href="#" class="cv-download-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
-            <path d="M5.75441 6.64956V7.73939C5.75441 7.85522 5.72827 7.93945 5.67598 7.9921C5.63415 8.03422 5.55049 8.05528 5.425 8.05528H3.08775C2.2616 8.05528 1.62369 7.83416 1.17402 7.39191C0.724348 6.94965 0.499512 6.3126 0.499512 5.48075V2.57453C0.499512 1.74268 0.724348 1.10563 1.17402 0.663377C1.62369 0.221125 2.2616 0 3.08775 0H5.425C5.64461 0 5.75441 0.110563 5.75441 0.331688V1.42152C5.75441 1.53735 5.72827 7.62159 5.67598 1.67424C5.63415 1.71635 5.55049 1.73741 5.425 1.73741H3.40147C3.07729 1.73741 2.842 1.81112 2.69559 1.95854C2.55964 2.09543 2.49167 2.33235 2.49167 2.6693V5.38598C2.49167 5.72294 2.55964 5.96512 2.69559 6.11254C2.842 6.24942 3.07729 6.31787 3.40147 6.31787H5.425C5.64461 6.31787 5.75441 6.42843 5.75441 6.64956Z" fill="#9D4EDD"/>
-            <path d="M7.07414 0H8.45454C8.66369 0 8.78918 0.110563 8.83101 0.331688L10.18 6.27048H10.2898L11.6075 0.331688C11.6493 0.110563 11.78 0 11.9996 0H13.38C13.5996 0 13.6781 0.110563 13.6153 0.331688L11.6388 7.7078C11.597 7.93945 11.4558 8.05528 11.2153 8.05528H9.22316C9.00356 8.05528 8.86238 7.93945 8.79963 7.7078L6.83885 0.331688C6.7761 0.110563 6.85454 0 7.07414 0Z" fill="#9D4EDD"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9407 4.89635C15.0577 4.89645 15.1698 4.94335 15.2524 5.02668L19.3701 9.17279C19.4528 9.25601 19.4994 9.3689 19.4995 9.48667V18.9635C19.4995 19.2384 19.3908 19.5018 19.1977 19.6961C19.0047 19.8905 18.7431 20 18.4701 20H7.88187C7.60885 20 7.34728 19.8905 7.15423 19.6961C6.96118 19.5018 6.85245 19.2384 6.85245 18.9635V8.84502H7.73481V18.9635C7.73481 19.0027 7.75012 19.0406 7.7777 19.0684C7.80528 19.0961 7.84286 19.1116 7.88187 19.1116H18.4701C18.5091 19.1116 18.5467 19.0961 18.5743 19.0684C18.6018 19.0406 18.6172 19.0027 18.6172 18.9635V9.9309H14.9407C14.8237 9.9309 14.7117 9.88387 14.629 9.80056C14.5462 9.71725 14.4995 9.60449 14.4995 9.48667V5.7848H13.9113V4.89635H14.9407ZM15.3819 9.04245H17.9937L15.3819 6.41257V9.04245Z" fill="#9D4EDD"/>
-            <path d="M13.176 11.4116C13.293 11.4116 13.405 11.4587 13.4877 11.542C13.5705 11.6253 13.6172 11.7381 13.6172 11.8559V15.5215L14.629 14.5035C14.7117 14.4203 14.8238 14.3739 14.9407 14.3739C15.0576 14.3739 15.1697 14.4203 15.2524 14.5035C15.335 14.5868 15.3811 14.6997 15.3811 14.8174C15.3811 14.9351 15.335 15.048 15.2524 15.1313L13.4877 16.9082C13.405 16.9914 13.2929 17.0377 13.176 17.0377C13.0591 17.0377 12.947 16.9914 12.8642 16.9082L11.0995 15.1313C11.0216 15.0471 10.9788 14.9355 10.9808 14.8205C10.9829 14.7054 11.0295 14.5956 11.1103 14.5143C11.1911 14.4329 11.3001 14.386 11.4143 14.3839C11.5286 14.3819 11.6394 14.425 11.723 14.5035L12.7348 15.5215V11.8559C12.7348 11.7381 12.7815 11.6253 12.8642 11.542C12.947 11.4587 13.059 11.4116 13.176 11.4116Z" fill="#9D4EDD"/>
-          </svg>
+        <a class="navbar-brand" href="index.html">than-theo</a>
+        <a href="./assets/Resume-Thanasis-Theodorou (1).pdf" class="cv-download-link" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none"><path d="M5.75441 6.64956V7.73939C5.75441 7.85522 5.72827 7.93945 5.67598 7.9921C5.63415 8.03422 5.55049 8.05528 5.425 8.05528H3.08775C2.2616 8.05528 1.62369 7.83416 1.17402 7.39191C0.724348 6.94965 0.499512 6.3126 0.499512 5.48075V2.57453C0.499512 1.74268 0.724348 1.10563 1.17402 0.663377C1.62369 0.221125 2.2616 0 3.08775 0H5.425C5.64461 0 5.75441 0.110563 5.75441 0.331688V1.42152C5.75441 1.53735 5.72827 7.62159 5.67598 1.67424C5.63415 1.71635 5.55049 1.73741 5.425 1.73741H3.40147C3.07729 1.73741 2.842 1.81112 2.69559 1.95854C2.55964 2.09543 2.49167 2.33235 2.49167 2.6693V5.38598C2.49167 5.72294 2.55964 5.96512 2.69559 6.11254C2.842 6.24942 3.07729 6.31787 3.40147 6.31787H5.425C5.64461 6.31787 5.75441 6.42843 5.75441 6.64956Z" fill="#9D4EDD"/><path d="M7.07414 0H8.45454C8.66369 0 8.78918 0.110563 8.83101 0.331688L10.18 6.27048H10.2898L11.6075 0.331688C11.6493 0.110563 11.78 0 11.9996 0H13.38C13.5996 0 13.6781 0.110563 13.6153 0.331688L11.6388 7.7078C11.597 7.93945 11.4558 8.05528 11.2153 8.05528H9.22316C9.00356 8.05528 8.86238 7.93945 8.79963 7.7078L6.83885 0.331688C6.7761 0.110563 6.85454 0 7.07414 0Z" fill="#9D4EDD"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.9407 4.89635C15.0577 4.89645 15.1698 4.94335 15.2524 5.02668L19.3701 9.17279C19.4528 9.25601 19.4994 9.3689 19.4995 9.48667V18.9635C19.4995 19.2384 19.3908 19.5018 19.1977 19.6961C19.0047 19.8905 18.7431 20 18.4701 20H7.88187C7.60885 20 7.34728 19.8905 7.15423 19.6961C6.96118 19.5018 6.85245 19.2384 6.85245 18.9635V8.84502H7.73481V18.9635C7.73481 19.0027 7.75012 19.0406 7.7777 19.0684C7.80528 19.0961 7.84286 19.1116 7.88187 19.1116H18.4701C18.5091 19.1116 18.5467 19.0961 18.5743 19.0684C18.6018 19.0406 18.6172 19.0027 18.6172 18.9635V9.9309H14.9407C14.8237 9.9309 14.7117 9.88387 14.629 9.80056C14.5462 9.71725 14.4995 9.60449 14.4995 9.48667V5.7848H13.9113V4.89635H14.9407ZM15.3819 9.04245H17.9937L15.3819 6.41257V9.04245Z" fill="#9D4EDD"/><path d="M13.176 11.4116C13.293 11.4116 13.405 11.4587 13.4877 11.542C13.5705 11.6253 13.6172 11.7381 13.6172 11.8559V15.5215L14.629 14.5035C14.7117 14.4203 14.8238 14.3739 14.9407 14.3739C15.0576 14.3739 15.1697 14.4203 15.2524 14.5035C15.335 14.5868 15.3811 14.6997 15.3811 14.8174C15.3811 14.9351 15.335 15.048 15.2524 15.1313L13.4877 16.9082C13.405 16.9914 13.2929 17.0377 13.176 17.0377C13.0591 17.0377 12.947 16.9914 12.8642 16.9082L11.0995 15.1313C11.0216 15.0471 10.9788 14.9355 10.9808 14.8205C10.9829 14.7054 11.0295 14.5956 11.1103 14.5143C11.1911 14.4329 11.3001 14.386 11.4143 14.3839C11.5286 14.3819 11.6394 14.425 11.723 14.5035L12.7348 15.5215V11.8559C12.7348 11.7381 12.7815 11.6253 12.8642 11.542C12.947 11.4587 13.059 11.4116 13.176 11.4116Z" fill="#9D4EDD"/></svg>
         </a>
-
 
         </div>
 
-
-        <div class="offcanvas offcanvas-end offcanvas-center offcanvas-bg my-4 " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas offcanvas-end offcanvas-center offcanvas-bg my-4 " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="
+    border-left: none;
+">
           <div class="offcanvas-header">
-           
-            
-
 
         <button type="button" class="btn-close btn-close-tt tt-btn-hw" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        <a class="navbar-brand" href="#">than-theo</a>
-        <a href="#" class="cv-download-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
-            <path d="M5.75441 6.64956V7.73939C5.75441 7.85522 5.72827 7.93945 5.67598 7.9921C5.63415 8.03422 5.55049 8.05528 5.425 8.05528H3.08775C2.2616 8.05528 1.62369 7.83416 1.17402 7.39191C0.724348 6.94965 0.499512 6.3126 0.499512 5.48075V2.57453C0.499512 1.74268 0.724348 1.10563 1.17402 0.663377C1.62369 0.221125 2.2616 0 3.08775 0H5.425C5.64461 0 5.75441 0.110563 5.75441 0.331688V1.42152C5.75441 1.53735 5.72827 1.62159 5.67598 1.67424C5.63415 1.71635 5.55049 1.73741 5.425 1.73741H3.40147C3.07729 1.73741 2.842 1.81112 2.69559 1.95854C2.55964 2.09543 2.49167 2.33235 2.49167 2.6693V5.38598C2.49167 5.72294 2.55964 5.96512 2.69559 6.11254C2.842 6.24942 3.07729 6.31787 3.40147 6.31787H5.425C5.64461 6.31787 5.75441 6.42843 5.75441 6.64956Z" fill="#9D4EDD"/>
-            <path d="M7.07414 0H8.45454C8.66369 0 8.78918 0.110563 8.83101 0.331688L10.18 6.27048H10.2898L11.6075 0.331688C11.6493 0.110563 11.78 0 11.9996 0H13.38C13.5996 0 13.6781 0.110563 13.6153 0.331688L11.6388 7.7078C11.597 7.93945 11.4558 8.05528 11.2153 8.05528H9.22316C9.00356 8.05528 8.86238 7.93945 8.79963 7.7078L6.83885 0.331688C6.7761 0.110563 6.85454 0 7.07414 0Z" fill="#9D4EDD"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9407 4.89635C15.0577 4.89645 15.1698 4.94335 15.2524 5.02668L19.3701 9.17279C19.4528 9.25601 19.4994 9.3689 19.4995 9.48667V18.9635C19.4995 19.2384 19.3908 19.5018 19.1977 19.6961C19.0047 19.8905 18.7431 20 18.4701 20H7.88187C7.60885 20 7.34728 19.8905 7.15423 19.6961C6.96118 19.5018 6.85245 19.2384 6.85245 18.9635V8.84502H7.73481V18.9635C7.73481 19.0027 7.75012 19.0406 7.7777 19.0684C7.80528 19.0961 7.84286 19.1116 7.88187 19.1116H18.4701C18.5091 19.1116 18.5467 19.0961 18.5743 19.0684C18.6018 19.0406 18.6172 19.0027 18.6172 18.9635V9.9309H14.9407C14.8237 9.9309 14.7117 9.88387 14.629 9.80056C14.5462 9.71725 14.4995 9.60449 14.4995 9.48667V5.7848H13.9113V4.89635H14.9407ZM15.3819 9.04245H17.9937L15.3819 6.41257V9.04245Z" fill="#9D4EDD"/>
-            <path d="M13.176 11.4116C13.293 11.4116 13.405 11.4587 13.4877 11.542C13.5705 11.6253 13.6172 11.7381 13.6172 11.8559V15.5215L14.629 14.5035C14.7117 14.4203 14.8238 14.3739 14.9407 14.3739C15.0576 14.3739 15.1697 14.4203 15.2524 14.5035C15.335 14.5868 15.3811 14.6997 15.3811 14.8174C15.3811 14.9351 15.335 15.048 15.2524 15.1313L13.4877 16.9082C13.405 16.9914 13.2929 17.0377 13.176 17.0377C13.0591 17.0377 12.947 16.9914 12.8642 16.9082L11.0995 15.1313C11.0216 15.0471 10.9788 14.9355 10.9808 14.8205C10.9829 14.7054 11.0295 14.5956 11.1103 14.5143C11.1911 14.4329 11.3001 14.386 11.4143 14.3839C11.5286 14.3819 11.6394 14.425 11.723 14.5035L12.7348 15.5215V11.8559C12.7348 11.7381 12.7815 11.6253 12.8642 11.542C12.947 11.4587 13.059 11.4116 13.176 11.4116Z" fill="#9D4EDD"/>
-          </svg>
+        <a class="navbar-brand" href="index.html">than-theo</a>
+        <a href="./assets/Resume-Thanasis-Theodorou (1).pdf" class="cv-download-link" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none"><path d="M5.75441 6.64956V7.73939C5.75441 7.85522 5.72827 7.93945 5.67598 7.9921C5.63415 8.03422 5.55049 8.05528 5.425 8.05528H3.08775C2.2616 8.05528 1.62369 7.83416 1.17402 7.39191C0.724348 6.94965 0.499512 6.3126 0.499512 5.48075V2.57453C0.499512 1.74268 0.724348 1.10563 1.17402 0.663377C1.62369 0.221125 2.2616 0 3.08775 0H5.425C5.64461 0 5.75441 0.110563 5.75441 0.331688V1.42152C5.75441 1.53735 5.72827 7.62159 5.67598 1.67424C5.63415 1.71635 5.55049 1.73741 5.425 1.73741H3.40147C3.07729 1.73741 2.842 1.81112 2.69559 1.95854C2.55964 2.09543 2.49167 2.33235 2.49167 2.6693V5.38598C2.49167 5.72294 2.55964 5.96512 2.69559 6.11254C2.842 6.24942 3.07729 6.31787 3.40147 6.31787H5.425C5.64461 6.31787 5.75441 6.42843 5.75441 6.64956Z" fill="#9D4EDD"/><path d="M7.07414 0H8.45454C8.66369 0 8.78918 0.110563 8.83101 0.331688L10.18 6.27048H10.2898L11.6075 0.331688C11.6493 0.110563 11.78 0 11.9996 0H13.38C13.5996 0 13.6781 0.110563 13.6153 0.331688L11.6388 7.7078C11.597 7.93945 11.4558 8.05528 11.2153 8.05528H9.22316C9.00356 8.05528 8.86238 7.93945 8.79963 7.7078L6.83885 0.331688C6.7761 0.110563 6.85454 0 7.07414 0Z" fill="#9D4EDD"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.9407 4.89635C15.0577 4.89645 15.1698 4.94335 15.2524 5.02668L19.3701 9.17279C19.4528 9.25601 19.4994 9.3689 19.4995 9.48667V18.9635C19.4995 19.2384 19.3908 19.5018 19.1977 19.6961C19.0047 19.8905 18.7431 20 18.4701 20H7.88187C7.60885 20 7.34728 19.8905 7.15423 19.6961C6.96118 19.5018 6.85245 19.2384 6.85245 18.9635V8.84502H7.73481V18.9635C7.73481 19.0027 7.75012 19.0406 7.7777 19.0684C7.80528 19.0961 7.84286 19.1116 7.88187 19.1116H18.4701C18.5091 19.1116 18.5467 19.0961 18.5743 19.0684C18.6018 19.0406 18.6172 19.0027 18.6172 18.9635V9.9309H14.9407C14.8237 9.9309 14.7117 9.88387 14.629 9.80056C14.5462 9.71725 14.4995 9.60449 14.4995 9.48667V5.7848H13.9113V4.89635H14.9407ZM15.3819 9.04245H17.9937L15.3819 6.41257V9.04245Z" fill="#9D4EDD"/><path d="M13.176 11.4116C13.293 11.4116 13.405 11.4587 13.4877 11.542C13.5705 11.6253 13.6172 11.7381 13.6172 11.8559V15.5215L14.629 14.5035C14.7117 14.4203 14.8238 14.3739 14.9407 14.3739C15.0576 14.3739 15.1697 14.4203 15.2524 14.5035C15.335 14.5868 15.3811 14.6997 15.3811 14.8174C15.3811 14.9351 15.335 15.048 15.2524 15.1313L13.4877 16.9082C13.405 16.9914 13.2929 17.0377 13.176 17.0377C13.0591 17.0377 12.947 16.9914 12.8642 16.9082L11.0995 15.1313C11.0216 15.0471 10.9788 14.9355 10.9808 14.8205C10.9829 14.7054 11.0295 14.5956 11.1103 14.5143C11.1911 14.4329 11.3001 14.386 11.4143 14.3839C11.5286 14.3819 11.6394 14.425 11.723 14.5035L12.7348 15.5215V11.8559C12.7348 11.7381 12.7815 11.6253 12.8642 11.542C12.947 11.4587 13.059 11.4116 13.176 11.4116Z" fill="#9D4EDD"/></svg>
         </a>
           </div>
-          <div class="offcanvas-body">
+          <div class="offcanvas-body d-flex flex-column">
             <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link ${isActive('home') || isActive('index')}" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link ${isActive('projects') || isActive('project')}" href="project.html">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About me</a>
+                <a class="nav-link ${isActive('about')}" href="about.html">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link ${isActive('contact')}" href="contact.html">Contact</a>
               </li>
             </ul>
-            
+            <div class="nav-extras">
+              <div class="d-flex justify-content-center gap-4">
+                <a href="https://github.com/ThanasisTh98" target="_blank" rel="noopener" class="nav-extra-link">
+                  <i class="ph ph-github-logo me-2"></i>GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/thanasis-theodorou-cy/" target="_blank" rel="noopener" class="nav-extra-link">
+                  <i class="ph ph-linkedin-logo me-2"></i>LinkedIn
+                </a>
+                <a href="mailto:thanasisth1998@gmail.com" class="nav-extra-link">
+                  <i class="ph ph-envelope me-2"></i>Email
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -128,12 +122,17 @@ function createCommonStyles() {
     -webkit-backdrop-filter: blur(10px);
     margin: 0 auto;
     padding: 12px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    gap:150px;
+        align-items: center;
   }
   
   /* Make offcanvas-header match tt-container-nav styling */
   .offcanvas-header {
     border-radius: 12px;
-   
+   gap:150px;
+       align-items: center;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
    
@@ -184,93 +183,52 @@ function createCommonStyles() {
   
   .navbar-brand {
   color: #9D4EDD !important;
-  margin-right: 154px;
-  margin-left: 154px;
+
   font-size: 1.5rem;
   font-weight: 500;
   }
   .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none"><path d="M0 0.5H12V1.5H0V0.5Z" fill="%239D4EDD"/><path d="M0 6.5H14V7.5H0V6.5Z" fill="%239D4EDD"/><path d="M0 12.5H17V13.5H0V12.5Z" fill="%239D4EDD"/></svg>') !important;
   }
+  
+  /* Nav extras styling */
+  .nav-extra-link {
+    color: #3C3A47 !important;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-extra-link:hover {
+    color: #9D4EDD !important;
+  }
+  
+  .nav-extra-link i {
+    font-size: 18px;
+  }
+
+
+    /* Responsive breakpoint for tt-container-nav */
+  @media (max-width: 576px) {
+    .tt-container-nav {
+      gap: 50px;
+      padding: 8px 12px;
+    }
+  }
+
+    /* Responsive breakpoint for offcanvas-header */
+  @media (max-width: 576px) {
+    .offcanvas-header {
+      gap: 50px;
+      padding: 8px 12px !important;
+    }
+  }
   </style>
 
 
-
-
-
-    <style>
-      .download-btn {
-        background-color: #1C1F33;
-        color: white;
-        padding: 8px 16px;
-        border-radius: 20px;
-        text-decoration: none;
-        display: inline-block;
-        font-weight: bold;
-        transition: all 0.3s ease;
-        font-size: 0.9rem;
-      }
-      .download-btn:hover {
-        background-color: #525069;
-        color: white;
-        text-decoration: none;
-        transform: translateY(-1px);
-      }
-      
-      /* Sticky navigation enhancements */
-      .navbar-custom {
-        border-radius: 200px;
-        border: 1px solid #9D4EDD;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.10) 100%);
-        box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.25) inset;
-        backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(6px);
-        transition: all 0.3s ease;
-        z-index: 1030;
-        margin: 20px auto;
-        width: calc(100% - 20px);
-        
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      
-      /* Add 100px gap between navbar items */
-      .navbar-custom .navbar-nav {
-        gap: 100px;
-      }
-      
-      /* Remove default Bootstrap margins since we're using gap */
-      .navbar-custom .nav-item {
-        margin: 0 !important;
-      }
-      
-      /* Responsive adjustments for mobile */
-      @media (max-width: 991.98px) {
-        .navbar-custom .navbar-nav {
-          gap: 20px;
-          flex-direction: column;
-        }
-      }
-      
-      /* Override Bootstrap's bg-body-tertiary for the navbar */
-      .navbar.bg-body-tertiary {
-        background-color: transparent !important;
-      }
-      
-      /* Add padding to body to prevent content from hiding behind sticky nav */
-      body {
-        padding-top: 0;
-        background-color: #F4F0F6 !important;
-      }
-      
-      /* Smooth scrolling for anchor links */
-      html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 100px;
-      }
-      
- 
-    </style>
   `;
 }
 

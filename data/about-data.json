@@ -1,0 +1,31 @@
+{
+  "about": {
+    "greeting": "Hello! I'm Thanasis Theo,",
+    "paragraphs": [
+      "A web developer based north of London with a unique journey from electronics and technical systems to web development. My transition from being a Senior Technical Officer to a Web Developer at the University of Hertfordshire has given me a distinctive perspective on problem-solving and technical implementation.",
+      "My background in electronics, network systems, and hardware provides me with a deep understanding of how systems work at a fundamental level. This technical foundation, combined with my passion for creating engaging digital experiences, allows me to approach web development with both creativity and technical precision.",
+      "When I'm not coding, you'll find me exploring new technologies, working on side projects, or delivering good vibes wherever I go. I believe in creating web experiences that are not just functional, but genuinely enjoyable to use."
+    ],
+    "buttonText": "Read more",
+    "profileImage": "./assets/ougabouga2.jpg",
+    "name": "Thanasis Theo",
+    "quickFacts": [
+      {
+        "label": "Location",
+        "value": "North of London, UK"
+      },
+      {
+        "label": "Current Role",
+        "value": "Web Developer"
+      },
+      {
+        "label": "Experience",
+        "value": "2+ years in web dev"
+      },
+      {
+        "label": "Specialty",
+        "value": "Frontend Development"
+      }
+    ]
+  }
+}

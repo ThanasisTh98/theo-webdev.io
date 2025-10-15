@@ -1,0 +1,82 @@
+{
+  "skills": {
+    "categories": [
+      {
+        "title": "Languages",
+        "items": [
+          {
+            "name": "JavaScript",
+            "icon": "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg"
+          }
+        ]
+      },
+      {
+        "title": "UI & UX Design",
+        "items": [
+          {
+            "name": "Figma",
+            "icon": "https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+          },
+          {
+            "name": "AdobeXD",
+            "icon": "https://upload.vectorlogo.zone/logos/adobe_illustrator/images/8cf40c06-e920-4d78-8171-6941d7ab675e.svg"
+          },
+          {
+            "name": "Sketch",
+            "icon": "https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg"
+          }
+        ]
+      },
+      {
+        "title": "Tools",
+        "items": [
+          {
+            "name": "VS Code",
+            "icon": "https://raw.githubusercontent.com/gilbarbara/logos/main/logos/visual-studio.svg"
+          },
+          {
+            "name": "Git",
+            "icon": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+          },
+          {
+            "name": "GitHub",
+            "icon": "https://upload.vectorlogo.zone/logos/github/images/47bfd2d4-712f-4dee-9315-f99c611b7598.svg"
+          },
+          {
+            "name": "Webpack",
+            "icon": "https://www.vectorlogo.zone/logos/js_webpack/js_webpack-icon.svg"
+          }
+        ]
+      },
+      {
+        "title": "Other",
+        "items": [
+          {
+            "name": "HTML",
+            "icon": "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+          },
+          {
+            "name": "CSS",
+            "icon": "https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg"
+          },
+          {
+            "name": "Tailwind",
+            "icon": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+          },
+          {
+            "name": "Bulma",
+            "icon": "https://www.svgrepo.com/show/353527/bulma.svg"
+          }
+        ]
+      }
+    ]
+  }
+}
