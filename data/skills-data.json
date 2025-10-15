@@ -45,10 +45,11 @@
           {
             "name": "GitHub",
             "icon": "https://upload.vectorlogo.zone/logos/github/images/47bfd2d4-712f-4dee-9315-f99c611b7598.svg"
-          },
+          }
+          ,
           {
-            "name": "Webpack",
-            "icon": "https://www.vectorlogo.zone/logos/js_webpack/js_webpack-icon.svg"
+            "name": "React",
+            "icon": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
           }
         ]
       },
@@ -70,10 +71,6 @@
           {
             "name": "Tailwind",
             "icon": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
-          },
-          {
-            "name": "Bulma",
-            "icon": "https://www.svgrepo.com/show/353527/bulma.svg"
           }
         ]
       }

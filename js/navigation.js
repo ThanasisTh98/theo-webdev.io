@@ -173,8 +173,14 @@ function createCommonStyles() {
     transform: translateX(-50%) !important;
     width: fit-content !important;
     max-width: 90vw !important;
-    height: 95vh !important;
+    height: 95vh ;
   }
+    @media (max-width: 576px) {
+
+        .offcanvas-center {
+            height: 80vh !important;
+        }
+    }
     .offcanvas-backdrop {
         background-color: #ffffff0d;
         backdrop-filter: blur(45px) brightness(1.1) contrast(1.05) saturate(1.1) hue-rotate(0deg) invert(0%) opacity(0.9) sepia(0%);

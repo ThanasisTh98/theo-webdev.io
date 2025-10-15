@@ -14,8 +14,10 @@
     
     @media (max-width: 576px) {
         .bg-container {
-            padding: 0;
+                padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
         }
+      
     }
     #index-hero{
        min-height: 60vh;
