@@ -111,8 +111,11 @@ function createCommonStyles() {
     height:30px;
   }
   .offcanvas-bg {
-    background: #E6E0F5 !important;
+    background: rgba(220, 211, 244, 0.80) !important;
     border-radius: 12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
   }
   .tt-container-nav{
     max-width: fit-content;

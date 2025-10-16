@@ -12,11 +12,6 @@
             "href": "https://codepen.io/ThanasisTh98",
             "class": "btn-outline-tt-primary",
             "target": "_blank"
-          },
-          {
-            "label": "Learn More",
-            "href": "#codepen-details",
-            "class": "btn-outline-tt-secondary"
           }
         ]
       },
@@ -24,14 +19,8 @@
         "title": "University Website",
         "categories": ["Professional", "Web Design"],
         "description": "A quick snapshot of my work at the University of Hertfordhsire. Detailing one of my many projects I've worked on.",
-        "image": "./assets/white-logo.png",
+        "image": "./assets/White-Logo.png",
         "buttons": [
-          {
-            "label": "Visit Site",
-            "href": "https://www.herts.ac.uk",
-            "class": "btn-outline-tt-primary",
-            "target": "_blank"
-          },
           {
             "label": "Learn More",
             "href": "university-website.html",
@@ -48,8 +37,7 @@
           {
             "label": "Learn More",
             "href": "project-cafe-royal.html",
-            "class": "btn-outline-tt-secondary",
-            "target": "_blank"
+            "class": "btn-outline-tt-secondary"
           }
         ]
       }

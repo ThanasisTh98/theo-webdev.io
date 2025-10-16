@@ -3,13 +3,15 @@
 }
     body{
     
-        background: radial-gradient(50% 50% at 50% 50%, #9C72EF 0%, #F4F1FA 100%)!important;
+        /* background: radial-gradient(50% 50% at 50% 50%, #9C72EF 0%, #F4F1FA 100%); */
+        background-color: #ffffff;
         color: #525069 !important;
     }
     .bg-container{
         background: rgba(234, 230, 245, 0.60);
         backdrop-filter: blur(2.950000047683716px);
         padding: 3rem;
+    
     }
     
     @media (max-width: 576px) {
@@ -19,6 +21,10 @@
         }
       
     }
+
+    .shadow-inset {
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff !important;
+}
     #index-hero{
        min-height: 60vh;
        /* border-top: 3px solid #1c1f3348;
@@ -111,12 +117,12 @@
     
 
     border-radius: 12px;
-    background: rgba(220, 211, 244, 0.40);
+    background: transparent;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     margin: 0 auto;
     padding: 12px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: none
 }
 .skill-row-tag img{
     margin-right: 8px;
@@ -363,4 +369,57 @@ a {
 
 .btn-outline-tt-secondary:hover i {
     transform: scale(1.1);
+}
+
+
+.bg__gradient {
+    height: 1000px;
+    width: 1000px;
+    background-image: linear-gradient(90deg, #8A60DD, #AE84F1, #B572EF, #8372EF, #9C72C7, #C472EF);
+    filter: blur(200px);
+    border-radius: 100%;
+    background-size: 1000% 100%;
+    animation: gradient 10s infinite ease-out;
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50% }
+    100% { background-position: 100% 100% }
+}
+
+.pause-btn {
+    position: fixed;
+    font-weight: bold;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    background: #8A60DD;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #fcfcfc;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.pause-btn:hover {
+    background: #AE84F1;
+    transform: scale(1.05);
+}
+
+.paused .bg__gradient {
+    animation-play-state: paused;
+}
+
+/* Update your bg-container to have the backdrop effect */
+.bg-container {
+    background: rgba(234, 230, 245, 0.40);
+    backdrop-filter: blur(2.95px);
+    position: relative;
+    z-index: 1;
 }

@@ -22,12 +22,12 @@ function createProjectCards(projectsData = {}) {
     
 
     border-radius: 12px;
-    background: rgba(220, 211, 244, 0.40);
+    background: transparent;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     margin: 0 auto;
     padding: 12px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: none;
 }
     #badge-container {
         padding: 0.5rem 1rem;

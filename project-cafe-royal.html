@@ -87,19 +87,12 @@
     
     <div class="container bg-container">
         
-        <!-- Breadcrumb Navigation -->
-        <nav aria-label="breadcrumb" class="pt-4 fade-in">
-            <ol class="breadcrumb breadcrumb-custom">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="project.html">Projects</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Cafe Royal</li>
-            </ol>
-        </nav>
+
 
         <!-- Project Detail Hero -->
         <section class="project-detail-hero fade-in">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 py-3">
                     <div class="slide-in-left">
                         <h1><strong>Cafe Royal Website</strong></h1>
                         <p class="lead">A comprehensive UI/UX design project for Cafe Royal, focusing on creating an elegant, user-friendly digital experience that captures the essence of premium coffee culture.</p>
@@ -304,52 +297,55 @@
         <section class="py-5 fade-in">
             <div class="container">
                 <div class="section-title d-flex flex-row slide-in-left">
-                    <div class="p-2"><h2><strong>#</strong>original-design</h2></div>
+                    <div class="p-2"><h2><strong>#</strong>all-designs</h2></div>
                     <div class="hr-container">
                         <hr class="custom-hr">
                     </div>
                 </div>
                 
                 <div class="mb-4 scale-in">
-                    <p class="text-center mb-4">The starting point - analyzing the existing website design to understand current user experience and identify areas for improvement.</p>
+                    <p class="text-center mb-4">I went through a total of 4 iterations and about 10 prototypes before arriving at the final design, Experiment 04</p>
                 </div>
-                
+                <button class="btn btn-primary" type="button" data-bs-target="#originalCarousel" data-bs-slide-to="0" aria-label="Slide 1">Original</button>
+                <button class="btn btn-primary" type="button" data-bs-target="#originalCarousel" data-bs-slide-to="1" aria-label="Slide 2">First Try</button>
+                <button class="btn btn-secondary" type="button" data-bs-target="#originalCarousel" data-bs-slide-to="2" aria-label="Slide 3">Second Try</button>
                 <div id="originalCarousel" class="carousel slide stagger-children" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#originalCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#originalCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#originalCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#originalCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./assets/project-cafe-royal/Screenshot 2025-10-15 225706.png" class="d-block w-100 project-image" alt="Original Homepage Design">
+                            <div class="ratio ratio-16x9">
+                                <img src="./assets/project-cafe-royal/Cafe-Original Frame.png" class="d-block w-100 project-image" alt="Original Homepage Design">
+                            </div>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Original Homepage</h5>
                                 <p>The outdated homepage from the early 2000s showing poor navigation and dated design.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/project-cafe-royal/Screenshot 2025-10-15 225812.png" class="d-block w-100 project-image" alt="Original Menu Page">
+                            <div class="ratio ratio-16x9">
+                                <img src="./assets/project-cafe-royal/Experiment One.png" class="d-block w-100 project-image" alt="Original Menu Page">
+                            </div>
+
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Original Menu Page</h5>
                                 <p>Difficult to navigate menu structure with poor user experience.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/cafe-royal/original-about.jpg" class="d-block w-100 project-image" alt="Original About Page">
+                            <div class="ratio ratio-16x9">
+                                <img src="./assets/project-cafe-royal/Experiment Two.png" class="d-block w-100 project-image" alt="Original About Page">
+                            </div>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Original About Page</h5>
                                 <p>Basic information layout lacking modern design principles.</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/original-contact.jpg" class="d-block w-100 project-image" alt="Original Contact Page">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Original Contact Page</h5>
-                                <p>Limited contact information and no modern user interaction features.</p>
-                            </div>
-                        </div>
+                  
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#originalCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -363,234 +359,7 @@
             </div>
         </section>
 
-        <!-- First Iteration -->
-        <section class="py-5 fade-in">
-            <div class="container">
-                <div class="section-title d-flex flex-row slide-in-right">
-                    <div class="p-2"><h2><strong>#</strong>first-iteration</h2></div>
-                    <div class="hr-container">
-                        <hr class="custom-hr">
-                    </div>
-                </div>
-                
-                <div class="mb-4 scale-in">
-                    <p class="text-center mb-4">Initial redesign concepts focusing on improved navigation, better visual hierarchy, and enhanced user experience.</p>
-                </div>
-                
-                <div id="firstIterationCarousel" class="carousel slide stagger-children" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#firstIterationCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#firstIterationCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#firstIterationCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#firstIterationCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#firstIterationCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#firstIterationCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/cafe-royal/iteration1-home.jpg" class="d-block w-100 project-image" alt="First Iteration Homepage">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First Iteration Homepage</h5>
-                                <p>Improved layout with better visual hierarchy and modern design elements.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/iteration1-menu.jpg" class="d-block w-100 project-image" alt="First Iteration Menu">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Menu Interface</h5>
-                                <p>Enhanced menu browsing experience with better categorization.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/iteration1-product.jpg" class="d-block w-100 project-image" alt="First Iteration Product Page">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Product Page</h5>
-                                <p>Detailed product information with improved visual presentation.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/iteration1-cart.jpg" class="d-block w-100 project-image" alt="First Iteration Cart">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Shopping Cart</h5>
-                                <p>Streamlined cart interface for better user experience.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/iteration1-checkout.jpg" class="d-block w-100 project-image" alt="First Iteration Checkout">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Checkout Process</h5>
-                                <p>Simplified checkout flow to reduce cart abandonment.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/iteration1-mobile.jpg" class="d-block w-100 project-image" alt="First Iteration Mobile">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Mobile Design</h5>
-                                <p>Responsive mobile interface for on-the-go users.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#firstIterationCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#firstIterationCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
 
-        <!-- Modern Design Take -->
-        <section class="py-5 fade-in">
-            <div class="container">
-                <div class="section-title d-flex flex-row slide-in-left">
-                    <div class="p-2"><h2><strong>#</strong>modern-approach</h2></div>
-                    <div class="hr-container">
-                        <hr class="custom-hr">
-                    </div>
-                </div>
-                
-                <div class="mb-4 scale-in">
-                    <p class="text-center mb-4">A more contemporary approach with clean lines, modern typography, and refined user interface elements.</p>
-                </div>
-                
-                <div id="modernCarousel" class="carousel slide stagger-children" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#modernCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#modernCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#modernCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#modernCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#modernCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/cafe-royal/modern-home-desktop.jpg" class="d-block w-100 project-image" alt="Modern Homepage Desktop">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Modern Desktop Homepage</h5>
-                                <p>Clean, contemporary design with improved user interface.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/modern-home-mobile.jpg" class="d-block w-100 project-image" alt="Modern Homepage Mobile">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Mobile-First Design</h5>
-                                <p>Optimized mobile experience with touch-friendly interactions.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/modern-menu.jpg" class="d-block w-100 project-image" alt="Modern Menu Design">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Modern Menu Layout</h5>
-                                <p>Elegant menu presentation with improved readability.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/modern-product.jpg" class="d-block w-100 project-image" alt="Modern Product Page">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Product Showcase</h5>
-                                <p>Modern product display with enhanced visual appeal.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/modern-about.jpg" class="d-block w-100 project-image" alt="Modern About Page">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>About Us Page</h5>
-                                <p>Storytelling approach with engaging visual elements.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#modernCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#modernCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Latest Bento Box Design -->
-        <section class="py-5 fade-in">
-            <div class="container">
-                <div class="section-title d-flex flex-row slide-in-right">
-                    <div class="p-2"><h2><strong>#</strong>bento-box-landing</h2></div>
-                    <div class="hr-container">
-                        <hr class="custom-hr">
-                    </div>
-                </div>
-                
-                <div class="mb-4 scale-in">
-                    <p class="text-center mb-4">The latest iteration featuring a modern bento box layout - a contemporary grid-based design that showcases content in organized, visually appealing sections.</p>
-                </div>
-                
-                <div id="bentoCarousel" class="carousel slide stagger-children" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#bentoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#bentoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#bentoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#bentoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#bentoCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#bentoCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/cafe-royal/bento-landing-full.jpg" class="d-block w-100 project-image" alt="Bento Box Landing Page Full View">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Full Bento Layout</h5>
-                                <p>Complete landing page showcasing the modern bento box grid system.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/bento-mobile.jpg" class="d-block w-100 project-image" alt="Bento Mobile Version">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Mobile Bento Design</h5>
-                                <p>Responsive bento layout optimized for mobile devices.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/bento-components.jpg" class="d-block w-100 project-image" alt="Bento Box Components">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Component Library</h5>
-                                <p>Individual bento box components and design system elements.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/bento-hero-section.jpg" class="d-block w-100 project-image" alt="Bento Hero Section Detail">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Hero Section</h5>
-                                <p>Detailed view of the bento-style hero section with engaging visuals.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/bento-menu-grid.jpg" class="d-block w-100 project-image" alt="Bento Menu Grid">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Menu Grid Layout</h5>
-                                <p>Menu items displayed in an organized bento-style grid format.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/cafe-royal/bento-cta-section.jpg" class="d-block w-100 project-image" alt="Bento CTA Section">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Call-to-Action Section</h5>
-                                <p>Strategic placement of CTAs within the bento box layout.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#bentoCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#bentoCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
     </div>
     
     <!-- Footer Placeholder -->
