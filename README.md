@@ -1,23 +1,30 @@
 
+
 # Thanasis Theo - Portfolio Website
 
 Welcome to my personal portfolio website! This project showcases my skills as a web developer and serves as a learning experience with GitHub and modern web development practices.
 
 🌐 **Live Site**: https://thanasisth98.github.io/theo-webdev.io/
 
+![Portfolio Banner](assets/Github.png)
 
 ## Project Structure
 
 ```
 theo-webdev.io/
-├── index.html          # Homepage - Experience & Projects showcase
-├── about.html          # About page - Personal story & skills
-├── resume.html         # Professional resume with detailed experience
-├── projects.html       # Projects showcase (coming soon)
-│   ├── Codepen         # Using codepen to showcase random components i've created on a whim
-│   ├── Cafe-Royal      # Redesigning my cousins cafe website to more modern standards 
-│   ├── Going out       # Re-imagining a website i created for my first year at uni 
-└──
+├── index.html                  # Homepage - Everythign in a snapshot
+├── about.html                  # About page - Story, skills and fun facts lol
+├── contact.html                # Contact page - Get in touch information
+├── project.html                # All my projects showcase page
+├── projects/
+│   └── university-website.html # University website project details
+│   └── project-cafe-royal.html # Cafe Royal redesign
+│   └── codepen-io              # Link to my Codepen profile
+│   └── going-out-remake        # [not yet published on site] Remaking my old website I made for a university project
+├── assets/                     # Images, documents, and media files
+├── css/                        # Stylesheets and design system
+├── js/                         # JavaScript components and utilities
+└── data/                       # JSON data files, storing the data for each js component
 ```
 ## 🚀 Unique Architecture
 
@@ -37,23 +44,22 @@ It's my own take on component architecture using pure vanilla JS - sometimes the
 ## 🗺️ Roadmap
 
 - [x] Setup GitHub repository
-- [x] Choose framework (Bootstrap 5)
+- [x] Bootstrap 5 for styling
 - [x] Create basic portfolio structure
-- [x] Setup development environment with live-server
 - [x] Design consistent navigation across all pages
 - [x] Implement About page with personal story
 - [x] Create professional Resume page
-- [x] Add Phosphor icons throughout the site
+- [x] Add Phosphor icons for free use icons
 - [x] Integrate GitHub API for dynamic commit dates
-- [x] Add live London time display
+- [x] Add live London time display (my local time)
 - [x] Implement responsive design
-- [ ] Complete projects showcase page
-- [ ] Add project case studies with live demos
-- [ ] Implement contact form functionality
+- [x] Complete projects showcase page
+- [x] Add smooth animations and transitions
+- [x] Create downloadable PDF resume
+- [ ] Add project "Going out" to project page
 - [ ] Add dark/light theme toggle
-- [ ] Optimize for SEO and accessibility
-- [ ] Add smooth animations and transitions
-- [ ] Create downloadable PDF resume
+- [ ] Add smooth scroll
+
 
 ## 📝 License
 
