@@ -1,10 +1,10 @@
 {
   "about": {
-    "greeting": "Hello! I'm Thanasis Theo,",
+    "greeting": "Hello! I'm Thanasis 'Theo' Theodrou",
     "paragraphs": [
-      "A web developer based north of London with a unique journey from electronics and technical systems to web development. My transition from being a Senior Technical Officer to a Web Developer at the University of Hertfordshire has given me a distinctive perspective on problem-solving and technical implementation.",
-      "My background in electronics, network systems, and hardware provides me with a deep understanding of how systems work at a fundamental level. This technical foundation, combined with my passion for creating engaging digital experiences, allows me to approach web development with both creativity and technical precision.",
-      "When I'm not coding, you'll find me exploring new technologies, working on side projects, or delivering good vibes wherever I go. I believe in creating web experiences that are not just functional, but genuinely enjoyable to use."
+      "I'm a web developer based just north of London, with a genuine love for front-end development and all things design. I started out in electronics and robotics working as a Techncian before moving into web development, and that hands-on technical background still shapes how I build today — with a mix of creativity, precision, and problem-solving.",
+      "Right now, I'm expanding my skill set by diving into TypeScript and React, adding more depth and flexibility to my projects and portfolio. I really enjoy bringing designs to life in the browser, crafting clean, accessible, and visually engaging experiences that just feel good to use.",
+      "When I'm not coding, you'll probably find me at the gym, clearing my head and chasing new goals — same mindset I bring to development, really: steady progress and constant improvement."
     ],
     "buttonText": "Read more",
     "profileImage": "./assets/ougabouga2.jpg",

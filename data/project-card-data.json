@@ -40,6 +40,19 @@
             "class": "btn-outline-tt-secondary"
           }
         ]
+      },
+      {
+        "title": "More Projects Coming Soon",
+        "categories": ["Coming Soon"],
+        "description": "Additional portfolio projects are in the pipeline! Currently managing a demanding work schedule.",
+        "image": "./assets/coming-soong.png",
+        "buttons": [
+          {
+            "label": "Stay Tuned",
+            "href": "#",
+            "class": "btn-outline-tt-primary disabled"
+          }
+        ]
       }
     ]
   }

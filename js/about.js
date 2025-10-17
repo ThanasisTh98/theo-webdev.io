@@ -21,9 +21,10 @@ function createAboutContent(aboutData = {}) {
           <p class="mb-4">${paragraph}</p>
         `).join('') : ''}
         <div class="my-4">
+        <!--
           ${aboutData.buttons ? aboutData.buttons.map(button => `
             <a href="${button.href}" class="${button.class || 'btn btn-lg btn-outline-tt-primary'}">${button.label} →</a>
-          `).join(' ') : '<a href="#" class="btn btn-lg btn-outline-tt-primary">Read more →</a>'}
+          `).join(' ') : '<a href="#" class="btn btn-lg btn-outline-tt-primary">Read more →</a>'} -->
         </div>
       </div>
       

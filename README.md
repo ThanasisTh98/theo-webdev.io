@@ -4,7 +4,7 @@
 
 Welcome to my personal portfolio website! This project showcases my skills as a web developer and serves as a learning experience with GitHub and modern web development practices.
 
-🌐 **Live Site**: https://thanasisth98.github.io/theo-webdev.io/
+🌐 **Live Site**: https://bit.ly/theo-webdev
 
 ![Portfolio Banner](assets/Github.png)
 

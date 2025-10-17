@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
@@ -106,9 +107,9 @@
                         </div>
                         
                         <div class="d-flex gap-3 flex-wrap">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-tt-primary">
+                            <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-tt-primary">
                                 <i class="ph ph-figma-logo me-2"></i>View Figma Design
-                            </a>
+                            </a> -->
                             <a href="project.html" class="btn btn-outline-tt-secondary">
                                 <i class="ph ph-arrow-left me-2"></i>Back to Projects
                             </a>
@@ -262,36 +263,6 @@
             </div>
         </section>
 
-        <!-- Future Development -->
-        <section class="py-5 fade-in">
-            <div class="container">
-                <div class="section-title d-flex flex-row slide-in-right">
-                    <div class="p-2"><h2><strong>#</strong>next-steps</h2></div>
-                    <div class="hr-container">
-                        <hr class="custom-hr">
-                    </div>
-                </div>
-                
-                <div class="row justify-content-center scale-in">
-                    <div class="col-lg-8">
-                        <div class="text-bg-tt-card text-center">
-                            <h4>Ready for Development</h4>
-                            <p class="mb-4">
-                                The design phase is complete with comprehensive Figma files, design system, and interactive prototypes. The project is ready to move into the development phase with detailed specifications and assets prepared.
-                            </p>
-                            <div class="d-flex justify-content-center gap-3 flex-wrap">
-                                <a href="contact.html" class="btn btn-outline-tt-primary">
-                                    <i class="ph ph-chat-circle me-2"></i>Discuss Development
-                                </a>
-                                <a href="project.html" class="btn btn-outline-tt-secondary">
-                                    <i class="ph ph-arrow-left me-2"></i>View More Projects
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Original Website Design -->
         <section class="py-5 fade-in">
@@ -306,55 +277,76 @@
                 <div class="mb-4 scale-in">
                     <p class="text-center mb-4">I went through a total of 4 iterations and about 10 prototypes before arriving at the final design, Experiment 04</p>
                 </div>
-                <button class="btn btn-primary" type="button" data-bs-target="#originalCarousel" data-bs-slide-to="0" aria-label="Slide 1">Original</button>
-                <button class="btn btn-primary" type="button" data-bs-target="#originalCarousel" data-bs-slide-to="1" aria-label="Slide 2">First Try</button>
-                <button class="btn btn-secondary" type="button" data-bs-target="#originalCarousel" data-bs-slide-to="2" aria-label="Slide 3">Second Try</button>
-                <div id="originalCarousel" class="carousel slide stagger-children" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#originalCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#originalCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#originalCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                
+                <div class="row">
+                    <!-- Text Column -->
+                    <div class="col-lg-4">
+                        <div class="text-bg-tt-card h-100">
+                            <div id="carousel-text">
+                                <!-- Default text for first slide -->
+                                <div class="carousel-text-content active" data-slide="0">
+                                    <h4>Original Homepage</h4>
+                                    <p>The outdated homepage from the early 2000s showing poor navigation and dated design. This was the starting point that clearly needed a complete overhaul to meet modern web standards.</p>
+                                    <p>Key issues included outdated fonts, poor color contrast, non-responsive layout, cluttered information architecture, and no clear call-to-action buttons. The site lacked any modern UX principles and failed to represent the quality of the actual cafe experience.</p>
+                                    <p>Most importantly, it wasn't mobile-friendly at all, which is crucial since most customers would be searching for cafe information on their phones while on the go.</p>
+                                </div>
+                                
+                                <div class="carousel-text-content" data-slide="1" style="display: none;">
+                                    <h4>First 3 Experiments</h4>
+                                    <p>New colour scheme, new logo, improved layout. However it was giving early 2010s website which I didn't like, it needed a modern twist. These experiments helped establish the direction but weren't quite there yet.</p>
+                                    <p>I introduced the signature red color palette that matches the cafe's branding, redesigned the logo to be more contemporary, and restructured the navigation to be more intuitive. The typography was upgraded to modern web fonts, and I added proper spacing and visual hierarchy.</p>
+                                    <p>While these changes were a massive improvement from the original, the overall aesthetic still felt dated - reminiscent of websites from 2010-2012. The design lacked the clean, minimalist approach that modern users expect. It was clear I needed to push further toward contemporary design trends.</p>
+                                    <p>These iterations were crucial learning experiences that helped me understand what worked (the color scheme, improved navigation) and what needed refinement (overall visual style, component design, user interface patterns).</p>
+                                </div>
+                                
+                                <div class="carousel-text-content" data-slide="2" style="display: none;">
+                                    <h4>My Final Design</h4>
+                                    <p>There were a few more designs in between the last 3 and this. I wanted to achieve a more modern and user-friendly interface, so I incorporated a very clean and minimalistic design approach. By far my favourite design with new logos.</p>
+                                    <p>This final iteration embraces modern design principles with generous white space, subtle shadows, and a refined color palette. I completely redesigned the logo to be more contemporary and versatile across different mediums. The navigation is intuitive with clear visual hierarchy and improved accessibility.</p>
+                                    <p>Key improvements include a mobile-first responsive design, optimized loading times, strategic use of the brand's red color for call-to-action elements, and a component-based design system that ensures consistency across all pages.</p>
+                                    <p>The result is a website that truly represents the quality and warmth of Cafe Royal while providing customers with an effortless digital experience. This design successfully bridges the gap between the cafe's traditional charm and modern digital expectations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Column -->
+                    <div class="col-lg-8">
+                        <div id="originalCarousel" class="carousel slide stagger-children" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#originalCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#originalCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#originalCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="ratio ratio-16x9">
+                                        <img src="./assets/project-cafe-royal/Cafe-Original Frame.png" class="d-block w-100 project-image" alt="Original Homepage Design">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="ratio ratio-16x9">
+                                        <img src="./assets/project-cafe-royal/Experiment One.png" class="d-block w-100 project-image" alt="First Experiments">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="ratio ratio-16x9">
+                                        <img src="./assets/project-cafe-royal/Experiment Two.png" class="d-block w-100 project-image" alt="Final Design">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
+                        <!-- Custom Navigation Controls -->
+                        <div class="d-flex justify-content-end mt-3 gap-2">
+                            <button class="btn btn-outline-tt-primary" type="button" data-bs-target="#originalCarousel" data-bs-slide="prev">
+                                <i class="ph ph-caret-left"></i>
+                            </button>
+                            <button class="btn btn-outline-tt-primary" type="button" data-bs-target="#originalCarousel" data-bs-slide="next">
+                                <i class="ph ph-caret-right"></i>
+                            </button>
+                        </div>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="ratio ratio-16x9">
-                                <img src="./assets/project-cafe-royal/Cafe-Original Frame.png" class="d-block w-100 project-image" alt="Original Homepage Design">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Original Homepage</h5>
-                                <p>The outdated homepage from the early 2000s showing poor navigation and dated design.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="ratio ratio-16x9">
-                                <img src="./assets/project-cafe-royal/Experiment One.png" class="d-block w-100 project-image" alt="Original Menu Page">
-                            </div>
-
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Original Menu Page</h5>
-                                <p>Difficult to navigate menu structure with poor user experience.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="ratio ratio-16x9">
-                                <img src="./assets/project-cafe-royal/Experiment Two.png" class="d-block w-100 project-image" alt="Original About Page">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Original About Page</h5>
-                                <p>Basic information layout lacking modern design principles.</p>
-                            </div>
-                        </div>
-                  
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#originalCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#originalCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </section>
@@ -378,6 +370,26 @@
             
             // Initialize animations
             initializeAnimations();
+            
+            // Carousel text synchronization
+            const carousel = document.getElementById('originalCarousel');
+            if (carousel) {
+                carousel.addEventListener('slide.bs.carousel', function (event) {
+                    // Hide all text content
+                    document.querySelectorAll('.carousel-text-content').forEach(function(content) {
+                        content.style.display = 'none';
+                        content.classList.remove('active');
+                    });
+                    
+                    // Show corresponding text for new slide
+                    const targetSlide = event.to;
+                    const targetText = document.querySelector(`[data-slide="${targetSlide}"]`);
+                    if (targetText) {
+                        targetText.style.display = 'block';
+                        targetText.classList.add('active');
+                    }
+                });
+            }
         });
     </script>
 </body>

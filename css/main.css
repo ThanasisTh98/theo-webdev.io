@@ -5,7 +5,7 @@
     
         /* background: radial-gradient(50% 50% at 50% 50%, #9C72EF 0%, #F4F1FA 100%); */
         background-color: #ffffff;
-        color: #525069 !important;
+        color: #3C3A47  !important;
     }
     .bg-container{
         background: rgba(234, 230, 245, 0.60);
@@ -34,15 +34,17 @@
        flex-direction: column;
     }
     #index-hero h1{
-       font-size: 80px;
+       font-size: 120px;
        color: #1C1F33;
+       font-weight: 600;
     }
     
     #index-hero p{
-       font-size: 18px;
+       font-size: 20px;
     }
     #index-hero span{
         font-size: 20px;
+        font-weight: 500;
     }
 .py-hero{
     padding-top: 210px;
